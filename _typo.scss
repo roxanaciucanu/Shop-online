@@ -3,6 +3,9 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+li{
+    font-size: 20px;
+}
 
 h1{
     font-size: 40px;
@@ -16,9 +19,7 @@ h3{
 div{
     font-size: 20px;
 }
-p,li,button, a{
-font-size: 25px ;
-}
+
 @mixin style {
     margin: 5px;
     border: $border;

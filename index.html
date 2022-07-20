@@ -12,6 +12,9 @@
 
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width:768px)">
+    <link rel="stylesheet" href="productPage.css">
+    
 </head>
 
 <body>
@@ -23,21 +26,57 @@
                         <img src="/images/logo.jpg" alt="logo" width="250px" height="120px">
                     </a>
                 </div>
+                <div class="hamburger">
+                    
+                    <i class="fa-solid fa-bars hamburger-icon"></i> 
+                  
+                <ul class="prod-categories">
+                    <i class="fa-solid fa-xmark close"></i>
+                    <li><a href="productsCat1.html" class="link">Medication OTC</a>
+
+                    </li>
+                  
+                    <li><a href="productsCat2.html" class="link">Personal care</a>
+
+                    </li>
+                    <li><a href="productsCat3.html" class="link">Vitamins and supplements</a>
+
+                    </li>
+                    <li><a href="productsCat4.html" class="link">Diet and wellness</a>
+                    
+                    </li>            
+                </ul>
+             
+            </div>
                 <div class="wrapper">
                     <div class="find">
                         <input type="search" id="search" placeholder="What would you like to search for today?">
                         <button class="search">Search</button>
 
-                        <div class="auto-fill">
-                            <li>Advil</li>
+                    <div class="auto-fill">
+                        <ul id="filled">
+                            <li><a href="productsCat1.html"> Advil </a> </li>
                             <li>Elmex</li>
-                            <li>Vichy</li>
+                            <li>Vichy</li> 
                             <li>Omega</li>
                             <li>bronz</li>
                             <li>Herbagen</li>
-
-                        </div>
+                            <li>Fervex</li> 
+                            <li>Colebil</li>
+                            <li>Faringosept</li>
+                            <li>Coldrex</li>
+                            <li>Claritine</li>
+                            <li>Calmax</li>
+                            <li>Aloe vera</li>
+                            <li>crema depilatoare</li>
+                            <li>Veet</li>
+                            <li>Borotalco</li>
+                            <li>Elmex</li>
+                            <li>spf</li>
+                            <li>glow</li>
+                        </ul>
                     </div>
+                </div>
 
                 </div>
 
@@ -73,76 +112,57 @@
                 </div>
                 <div class="dropdown">
                     
-                    <button class="prod">
-                        <i class="fa-solid fa-bars hamburger-menu"></i>
-                        Products</button>
+                    <button class="prod">Products</button>
                     <div class="dropdown-menu">
                         <ul class="prod-categories">
-                            <li><a href="#" class="link">Medication OTC
+                            <li><a href="productsCat1.html" class="link">Medication OTC
                                     <i class="fas fa-caret-right"></i>
                                 </a>
                                 <div class="dropdown-menu1">
                                     <ul>
-                                        <li><a href="#"></a>Cardiology</li>
-                                        <li><a href="#"></a>Reumathology</li>
-                                        <li><a href="#"></a>Urology</li>
-                                        <li><a href="#"></a>ORL</li>
-                                        <li><a href="#"></a>Alergies</li>
+                                        <li><a href="productsCat1.html">Cardiology</a></li>
+                                        <li><a href="productsCat1.html">Reumathology</a></li>
+                                        <li><a href="productsCat1.html">Urology</a></li>
+                                        <li><a href="productsCat1.html">ORL</a></li>
+                                        <li><a href="productsCat1.html">Alergies</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="#" class="link">Medication with prescription
-                                <i class="fas fa-caret-right"></i>
-                            </a>
-                                <div class="dropdown-menu2">
-                                    <ul>
-                                        <li><a href="#"></a>Flu vaccines</li>
-                                        <li><a href="#"></a>Contraception pills</li>
-                                        <li><a href="#"></a>Insulins</li>
-                                        <li><a href="#"></a>Homeopathic</li>
-                                        <li><a href="#"></a>In vitro fertilization</li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#" class="link">Personal care
+                          
+                            <li><a href="productsCat2.html" class="link">Personal care
                                 <i class="fas fa-caret-right"></i>
                             </a>
                                 <div class="dropdown-menu3">
                                     <ul>
-                                        <li><a href="#"></a>Sanitizer</li>
-                                        <li><a href="#"></a>Child care</li>
-                                        <li><a href="#"></a>Men care</li>
-                                        <li><a href="#"></a>Women care</li>
-                                        <li><a href="#"></a>Hair care</li>
-                                        <li><a href="#"></a>Intime care</li>
-                                        <li><a href="#"></a>Body care</li>
-                                        <li><a href="#"></a>Face care</li>
+                                        <li><a href="productsCat2.html">Sanitizer</a></li>
+                                        <li><a href="productsCat2.html">Child care</a></li>
+                                        <li><a href="productsCat2.html">Men care</a></li>
+                                        <li><a href="productsCat2.html">Women care</a></li>
+                                        <li><a href="productsCat2.html">Hair care</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="#" class="link">Vitamins and suplements
+                            <li><a href="productsCat3.html" class="link">Vitamins and suplements
                                 <i class="fas fa-caret-right"></i>
                             </a>
                                 <div class="dropdown-menu4">
                                     <ul>
-                                        <li><a href="#"></a>Nervous system</li>
-                                        <li><a href="#"></a>Cardiology</li>
-                                        <li><a href="#"></a>Endocrine system</li>
-                                        <li><a href="#"></a>Immunity</li>
-                                        <li><a href="#"></a>Circulation</li>
+                                        <li><a href="productsCat3.html">Nervous system</a></li>
+                                        <li><a href="productsCat3.html">Endocrine system</a></li>
+                                        <li><a href="productsCat3.html">Immunity</a></li>
+                                        <li><a href="productsCat3.html">Circulation</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="#" class="link">Diet and wellness
+                            <li><a href="productsCat4.html" class="link">Diet and wellness
                                 <i class="fas fa-caret-right"></i>
                             </a>
                                 <div class="dropdown-menu5">
                                     <ul>
-                                        <li><a href="#"></a>Tea</li>
-                                        <li><a href="#"></a>Natural juice and syrup</li>
-                                        <li><a href="#"></a>Vegetal drinks</li>
-                                        <li><a href="#"></a>Aromatherapy</li>
-                                        <li><a href="#"></a>Seeds and dried fruits</li>
+                                        <li><a href="productsCat4.html">Tea</a></li>
+                                        <li><a href="productsCat4.html">Natural juice and syrup</a></li>
+                                        <li><a href="productsCat4.html">Vegetal drinks</a></li>
+                                        <li><a href="productsCat4.html">Seeds and dried fruits</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -156,144 +176,47 @@
                 <a href="/">Loyalty program</a>
 
             </div>
-            <div class="hero">
-           
-            </div>
-        </div>
+<div id="root">
+       
 
-        <section class="shop">
-            <h2 class="summer">Featured products</h2>
-            <div class="shop-content">
-
-
-                <div class="product-box">
-                    <img src="images/aloe-vera.jpg" alt="" class="prod-img">
-                    <h3 class="prod-title">gel aloe vera</h3>
-                    <span class="price">$30</span>
-                    <i class="fa-solid fa-bag-shopping add-cart"></i>
-                </div>
-
-                <div class="product-box">
-                    <img src="images/elmex.jpg"  alt="" class="prod-img">
-                    <h3 class="prod-title">elmex</h3>
-                    <span class="price">$20</span>
-                    <i class="fa-solid fa-bag-shopping add-cart"></i>
-                </div>
-
-                <div class="product-box">
-                    <img src="images/borotalco.jpg"  alt="" class="prod-img">
-                    <h3 class="prod-title">deodorant borotalco</h3>
-                    <span class="price">$30</span>
-                    <i class="fa-solid fa-bag-shopping add-cart"></i>
-                </div>
-
-                <div class="product-box">
-                    <img src="images/product2.jpg"  alt="" class="prod-img">
-                    <h3 class="prod-title">spf50</h3>
-                    <span class="price">$30</span>
-                    <i class="fa-solid fa-bag-shopping add-cart"></i>
-                </div>
-
-                <div class="product-box">
-                    <img src="images/Herbagen.jpg"  alt="" class="prod-img">
-                    <h3 class="prod-title">herbagen</h3>
-                    <span class="price">$30</span>
-                    <i class="fa-solid fa-bag-shopping add-cart"></i>
-                </div>
-
-                <div class="product-box">
-                    <img src="images/autobronzant.jpg"  alt="" class="prod-img">
-                    <h3 class="prod-title">vichy</h3>
-                    <span class="price">$30</span>
-                    <i class="fa-solid fa-bag-shopping add-cart"></i>
-                </div>
-
-                <div class="product-box">
-                    <img src="images/glow.jpg" alt=""  class="prod-img">
-                    <h3 class="prod-title">glow</h3>
-                    <span class="price">$30</span>
-                    <i class="fa-solid fa-bag-shopping add-cart"></i>
-                </div>
-
-                <div class="product-box">
-                    <img src="images/product1.jpg" alt=""  class="prod-img">
-                    <h3 class="prod-title">claritine</h3>
-                    <span class="price">$30</span>
-                    <i class="fa-solid fa-bag-shopping add-cart"></i>
-                </div>
-
-                <div class="product-box">
-                    <img src="images/veet.jpg" alt=""  class="prod-img">
-                    <h3 class="prod-title">veet</h3>
-                    <span class="price">$30</span>
-                    <i class="fa-solid fa-bag-shopping add-cart"></i>
-                </div>
-
-                <div class="product-box">
-                    <img src="images/uriage.jpg" alt=""  class="prod-img">
-                    <h3 class="prod-title">uriage</h3>
-                    <span class="price">$30</span>
-                    <i class="fa-solid fa-bag-shopping add-cart"></i>
-                </div>
-
-
-            </div>
+</div>
         </section>
 
 
         <footer>
 
             <div class="copyright">
-                <p>The Pharmacy |</p>
-                <p>ⓒ 2022 All rights reserved</p>
+                <p class="footer-title">The Pharmacy | ⓒ 2022 All rights reserved</p>
+                
             </div>
             <div class="info">
-                <h4>Customer information</h4>
+                <h4 class="footer-title">Customer information</h4>
                 <ul>
                     <li>Conditions of use</li>
-                    <li>How do I order</li>
                     <li>Transport & Payments</li>
                     <li>Frequent questions</li>
-                    <li>Returns</li>
                 </ul>
             </div>
             <div class="info-general">
-                <h4>General information</h4>
+                <h4 class="footer-title">General information</h4>
                 <ul>
                     <li>About us</li>
                     <li>Careers</li>
-                    <li>Cookie usage policy</li>
                     <li>Personal data privacy policy</li>
-                    <li>Medication prospectus</li>
                 </ul>
             </div>
-            <div class="locations">
-                <h4>You can find us here</h4>
-                <ul>
-                    <li><a href="google.ro" target="_blank">
-                            The Pharmacy - Ion Creanga</a></li>
-                    <li>The Pharmacy - Mihail Sadoveanu</li>
-                    <li>The Pharmacy - Copou</li>
-                    <li>The Pharmacy - Tudor Vladimirescu</li>
-                    <li>The Pharmacy - Nicolina</li>
-                </ul>
-            </div>
+        
             <div class="contact">
-                <h4> Contact</h4>
+                <h4 class="footer-title"> Contact</h4>
                 <ul>
                     <li>Monday - Friday: 8:00 - 20:00 </li>
                     <li>Saturday: 8:00 - 15:00</li>
-                    <li><a href="mailto:contact@thepharmacy.ro">
-                            contact@thepharmacy.ro</a></li>
-                    <ul>
-                        <li><a href="">
-                                Facebook</a></li>
-                        <li><a href="">
-                                YouTube</a></li>
-                        <li><a href="">
-                                Twitter</a></li>
-                        <li><a href="">
-                                Instagram</a></li>
+                    <li><a href="mailto:contact@thepharmacy.com">
+                            contact@thepharmacy.com</a></li>
+                    <ul class="social-media">
+                        <li><i class="fa-brands fa-facebook"></i></li>
+                        <li><i class="fa-brands fa-twitter-square"></i></li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
                     </ul>
                 </ul>
             </div>
@@ -305,6 +228,7 @@
     <script src="header.js"></script>
     <script src="suggestions.js"></script>
     <script src="shop.js"></script>
+    <script src="mobile.js"></script>
 </body>
 
 </html>

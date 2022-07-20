@@ -5,7 +5,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 250px;
+  margin-top: 160px;
 }
 
 .formular {
@@ -86,35 +86,7 @@
   width: 180px;
 }
 
-.formular form .div5 {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-}
-
-.formular form .div5 input {
-  border: 2px solid #a1c5d1;
-  width: 180px;
-}
-
-.formular form .div6 {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-}
-
-.formular form .div6 input {
-  border: 2px solid #a1c5d1;
-  width: 180px;
-}
-
-.formular form .submit {
+.formular .submit {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/ span 2;
@@ -123,7 +95,7 @@
   grid-row: 6/7;
 }
 
-.formular form .submit button {
+.formular .submit button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,9 +110,10 @@
   font-weight: bolder;
   text-align: center;
   padding-left: 50px;
+  cursor: pointer;
 }
 
-.formular .sign-up {
+.sign-up {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

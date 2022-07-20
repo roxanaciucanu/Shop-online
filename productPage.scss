@@ -1,0 +1,39 @@
+.prodPage{
+    padding: 80px;
+    display: flex;
+    align-items: center;
+    
+}
+.product{
+    border: 1px solid rgb(240, 226, 226);
+    height: 500px;
+    width: 700px;
+    padding: 25px;
+
+}
+.delivery{
+    list-style: circle;
+    li{
+        padding: 5px;
+    }
+}
+.prodInfo, .prodPrice, .prodDetails{
+    padding: 10px;
+    
+}
+.delOption{
+padding: 5px;
+}
+.addToCart {
+background-color: rgb(81, 182, 81);
+text-align: center;
+margin-top: 10px;
+width: 250px;
+height: 70px ;
+padding: 10px;
+border: 1px solid  rgb(240, 226, 226);
+.cart-symbol{
+padding: 10px;
+}
+
+}

@@ -1,0 +1,44 @@
+@import "prodStyle";
+@import "basics";
+
+body{
+    font-family: sans-serif;
+    background-color: rgb(253, 242, 229);
+    padding: 20px 0 28px 0;
+    margin: 0;
+}
+.med-photo{
+    width: 150px;
+    height: 140px;
+}
+  
+.show-title{
+    text-align: center;
+    margin-top: 50px
+}
+.medication {
+    @include prodBox;
+}
+.personal-care{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 200px));
+    gap: 3rem;
+    margin-top: 100px;
+    cursor: pointer;
+    padding: 15px;
+    margin-left: 130px;
+}
+.seeDetails{
+    width: 120px;
+    height: 30px;
+    background: rgb(212, 212, 240);
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 20px;
+    padding: 5px;
+    border: 1px solid rgb(190, 184, 184);
+    a{
+    text-decoration: none;
+    }
+}

@@ -17,3 +17,9 @@ $size_h: 320px;
 
 }  
 
+@mixin prodBox {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid rgb(159, 152, 152);
+    background-color: white;
+}

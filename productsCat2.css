@@ -1,0 +1,83 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text-color--);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  padding: 0;
+}
+
+section {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #fdf2e5;
+  padding: 20px 0 28px 0;
+  margin: 0;
+}
+
+.med-photo {
+  width: 150px;
+  height: 140px;
+}
+
+.show-title {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.medication {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #9f9898;
+  background-color: white;
+}
+
+.personal-care {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(180px, 200px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 200px));
+  gap: 3rem;
+  margin-top: 100px;
+  cursor: pointer;
+  padding: 15px;
+  margin-left: 130px;
+}
+
+.seeDetails {
+  width: 120px;
+  height: 30px;
+  background: #d4d4f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5px;
+  margin-left: 20px;
+  padding: 5px;
+  border: 1px solid #beb8b8;
+}
+
+.seeDetails a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=productsCat2.css.map */
