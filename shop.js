@@ -111,7 +111,12 @@ function quantityChanged(event) {
         let price = parseInt(priceItem.innerText.replace("$", ""));
         let quantity = quantityItem.value;
         total = total + (price * quantity);
-
+       
         document.getElementsByClassName("total-price")[0].innerText = "$" + total;
     }
+    if (cartBoxes.length == 0) {
+        total = 0;
+    }
+    document.getElementsByClassName("total-price")[0].innerText = "$" + total;
+  
  }

@@ -1,8 +1,7 @@
+const rootElem = document.getElementById("root");
 
-const rootElem = document.getElementById('root')
-
-function renderShop(){
-const shopContent = `
+function renderShop() {
+  const shopContent = `
 <div class="hero">
            
 </div>
@@ -106,25 +105,22 @@ const shopContent = `
 
 
 </div>
-`
-rootElem.innerHTML = shopContent;
-
+`;
+  rootElem.innerHTML = shopContent;
 }
 
 renderShop();
 
-
-
 function renderDetails(e) {
-    const info = e.target.parentNode.childNodes;
-const detailsView =`
+  const info = e.target.parentNode.childNodes;
+  const detailsView = `
 <h3 class="categorySelect">Home /Medicaments</h3>
 <div class="prodPage">
 <div class="prodBox">
 
     <img src=${info[1].src} width="350px" height="320px" id="prodImage">
     <i class="fa-solid fa-left"></i>
-    <button class="backBtn" onclick="renderShop()">
+    <button class="backBtn" onclick="renderAfterBack()">
     Go back</button>
     </div>
   
@@ -158,8 +154,8 @@ const detailsView =`
 
 </div>
 
-`
-rootElem.innerHTML = detailsView;
+`;
+  rootElem.innerHTML = detailsView;
 }
 
 //   function testing(e) {
@@ -167,10 +163,28 @@ rootElem.innerHTML = detailsView;
 //   }
 
 
-const btnSeeDetails = document.getElementsByClassName('seeDetails')
-console.log(btnSeeDetails)
+//This won't execute unless I refresh the window, because the script only executes once when the window loggs
+const btnSeeDetails = document.getElementsByClassName("seeDetails");
 
 for (let index = 0; index < btnSeeDetails.length; index++) {
-    btnSeeDetails[index].addEventListener("click", renderDetails)
-  
+  btnSeeDetails[index].addEventListener("click", renderDetails);
 }
+
+const addClickListener = () => {
+  for (let i = 0; i < addCart.length; i++) {
+    let button = addCart[i];
+    button.addEventListener("click", addCartClicked);
+  }
+};
+
+//I had to create another function to render the 'rendershop' in order to be able to add the addEventListeners again
+const renderAfterBack = () => {
+  renderShop();
+  const btnSeeDetails = document.getElementsByClassName("seeDetails");
+  let addCart = document.getElementsByClassName("add-cart");
+
+  for (let index = 0; index < btnSeeDetails.length; index++) {
+    btnSeeDetails[index].addEventListener("click", renderDetails);
+  }
+  addClickListener();
+};
