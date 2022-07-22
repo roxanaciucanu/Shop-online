@@ -1,65 +1,26 @@
-// const firstName = document.getElementById('name');
-// const password = document.getElementById('password');
-// const form = document.getElementsByTagName('form');
-// const errorElem = document.getElementById('error')
-// const button = document.getElementById('abc')
 
+const username = document.getElementById("name");
+const email = document.getElementById("email");
+const pass = document.getElementById("password");
+const lastName = document.getElementById("last_name");
 
-// button.addEventListener('click', (e) => {
-//     e.preventDefault()
-//     let message = []
-//     if (firstName.value === '' || firstName.value == null){
-//         message.push('Name is required')
-//     }
-    
-//     if(password.value.length <= 5){
-//         message.push('Password must be longer than 5 characters')
-//     }
-//     if(password.value.length >= 15){
-//         message.push('Password must be shorther than 15 characters')
-//     }
-    
-//     if(message.length > 0){
-//      e.preventDefault()
-//      errorElem.innerHTML = message.join('</br>')
-//      }
-//      return false
-// })
-
-//Signup function
-// function signup(e) {
-//     event.preventDefault()
-
-const username = document.getElementById("name")
-const email = document.getElementById("email")
-const pass = document.getElementById("password")
-
-const userSignup = ()=>{
-
-if (localStorage.getItem(username.value)) {
-    alert("this user exists!")
-}else{
-    localStorage.setItem(username.value,email.value,pass.value)
-    alert('successful registration')
-}
-
-}
-
-
-
-
-
-// let user ={
-// name:username,
-// email:email,
-// password:pass
-// }
-
-// let json = JSON.stringify(user);
-// localStorage.setItem(username,json)
-// console.log('úser added');
-// }
-
-
-
+const userSignup = () => {
+  // This will be triggered when the user clicks on the send button
+  if (localStorage.getItem(email.value)) {
+    // Here we're validating if the entered email is found on the local storage. If it's found, it means that the user already exists hence no possible to register with the given email. We want the emails to be unique, as it'll be the user identifier.
+    alert("User already exists!"); // Feel free to add more steps if the condition above is met.
+  } else {
+    localStorage.setItem(
+      email.value,
+      JSON.stringify({
+        password: pass.value,
+        name: username.value,
+        lastName: lastName.value,
+      })
+    );
+    alert("Successful signup!");
+    // Simulate an HTTP redirect:
+    window.location.replace = ("http://127.0.0.1:5500/login.html");
+  }
+};
 

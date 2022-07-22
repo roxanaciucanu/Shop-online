@@ -20,13 +20,14 @@ body {
   padding: 20px;
   border: 1px solid #9f9898;
   background-color: white;
+  width: 220px;
 }
 
 .prod-oct {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(180px, 200px))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(180px, 200px));
+  -ms-grid-columns: (minmax(180px, 220px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
   gap: 5rem;
   margin-top: 80px;
   cursor: pointer;
@@ -34,7 +35,11 @@ body {
   margin-left: 70px;
 }
 
-.seeDetails {
+.news-name {
+  padding: 5px;
+}
+
+.detailsBtn {
   width: 120px;
   height: 30px;
   background: #d4d4f0;
@@ -44,13 +49,13 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 5px;
   margin-left: 20px;
+  margin-bottom: 2px;
   padding: 5px;
   border: 1px solid #beb8b8;
 }
 
-.seeDetails a {
+.detailsBtn a {
   text-decoration: none;
 }
 /*# sourceMappingURL=productsCat1.css.map */

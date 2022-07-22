@@ -165,9 +165,11 @@ function renderDetails(e) {
 
 //This won't execute unless I refresh the window, because the script only executes once when the window loggs
 const btnSeeDetails = document.getElementsByClassName("seeDetails");
+const detailsButtonn = document.getElementsByClassName("detailsBtn")
 
 for (let index = 0; index < btnSeeDetails.length; index++) {
   btnSeeDetails[index].addEventListener("click", renderDetails);
+  detailsButtonn[index].addEventListener("click", renderDetails);
 }
 
 const addClickListener = () => {

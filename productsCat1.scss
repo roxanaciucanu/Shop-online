@@ -20,21 +20,25 @@ body{
 }
 .prod-oct{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 200px));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
     gap: 5rem;
     margin-top: 80px;
     cursor: pointer;
     padding: 20px;
     margin-left: 70px;
+    
 }
-.seeDetails{
+.news-name{
+    padding: 5px;
+}
+.detailsBtn{
     width: 120px;
     height: 30px;
     background: rgb(212, 212, 240);
     display: flex;
     justify-content: center;
-    margin-top: 5px;
     margin-left: 20px;
+    margin-bottom: 2px;
     padding: 5px;
     border: 1px solid rgb(190, 184, 184);
     a{

@@ -3,28 +3,28 @@ const news =
     {
         name: "Dettol",
         photo: "/meds/dettol.jpg" ,
-        price: "x ron",
+        price: "$ 28",
         availability: "in stock",
         description: "text"
     },
     {
         name: "Hygenium",
         photo: "/meds/hygienium.jpg",
-        price: "y ron",
+        price: "$ 32",
         availability: "in stock",
         description: "text"
     },
     {
         name: "Bepanthen",
         photo: "meds/bepanthen.jpg",
-        price: "z ron",
+        price: "$ 17",
         availability: "in stock",
         description: "text"
     },
     {
         name: "Sudocrem",
         photo: "/meds/sudocrem.jpg",
-        price: "xs ron",
+        price: "$ 35",
         availability: "in stock",
         description: "text"
     },
@@ -32,7 +32,7 @@ const news =
     {
         name: "Exfoliant",
         photo: "/meds/exfoliant.jpg",
-        price: "x ron",
+        price: "$ 42",
         availability: "in stock",
         description: "text"
     },
@@ -40,7 +40,7 @@ const news =
     {
         name: "Shampoo Klorane",
         photo: "/meds/klorane.jpg",
-        price: "x ron",
+        price: "$ 56",
         availability: "in stock",
         description: "text"
     },
@@ -48,7 +48,7 @@ const news =
     {
         name: "Hair mask Elseve",
         photo: "/meds/elseve.jpg",
-        price: "x ron",
+        price: "$ 28",
         availability: "in stock",
         description: "text"
     },
@@ -56,7 +56,7 @@ const news =
     {
         name: "Avene MEN",
         photo: "/meds/avene-men.jpg",
-        price: "x ron",
+        price: "$ 22",
         availability: "in stock",
         description: "text"
     },
@@ -64,7 +64,7 @@ const news =
     {
         name: "Tarr",
         photo: "/meds/tarr.jpg",
-        price: "x ron",
+        price: "$ 15",
         availability: "in stock",
         description: "text"
     },
@@ -72,7 +72,7 @@ const news =
     {
         name: "Bioderma",
         photo: "/meds/bioderma.jpg",
-        price: "x ron",
+        price: "$ 28",
         availability: "in stock",
         description: "text"
     },
@@ -82,7 +82,7 @@ const news =
     {
         name: "Lipogel",
         photo: "/meds/lipogel.jpg",
-        price: "x ron",
+        price: "$ 15",
         availability: "in stock",
         description: "text"
     },
@@ -90,7 +90,7 @@ const news =
     {
         name: "Canephron",
         photo: "/meds/voltaren.jpg",
-        price: "x ron",
+        price: "$ 10",
         availability: "in stock",
         description: "text"
     },
@@ -98,7 +98,7 @@ const news =
     {
         name: "Otipax",
         photo: "/meds/otipax.jpg",
-        price: "x ron",
+        price: "$ 25",
         availability: "in stock",
         description: "text"
     },
@@ -106,7 +106,7 @@ const news =
     {
         name: "Ototis",
         photo: "/meds/ototis.jpg",
-        price: "x ron",
+        price: "$ 29",
         availability: "in stock",
         description: "text"
     },
@@ -114,7 +114,7 @@ const news =
     {
         name: "Flonidan",
         photo: "/meds/flonidan.jpg",
-        price: "x ron",
+        price: "$ 18",
         availability: "in stock",
         description: "text"
     },
@@ -122,14 +122,14 @@ const news =
     {
         name: "Rival",
         photo: "/meds/rival.jpg",
-        price: "x ron",
+        price: "$ 20",
         availability: "in stock",
         description: "text"
     },
 {
     name: "Veet",
         photo: "/images/veet.jpg",
-        price: "x ron",
+        price: "$ 23",
         availability: "in stock",
         description: "text"
 },
@@ -137,7 +137,7 @@ const news =
 {
     name: "Deodorant",
         photo: "/images/borotalco.jpg",
-        price: "x ron",
+        price: "$ 12",
         availability: "in stock",
         description: "text"
 },
@@ -150,8 +150,8 @@ function newProd(prodData) {
     return `
     <div class="medication">
     <img class="med-photo" src="${prodData.photo}">
-    <h3 class="news-name">${prodData.name} <span class="prices"> (${prodData.price}) </span></h3>
-    <button class="seeDetails"> <a href="productPage.html">See more details</a>
+    <p class="news-name">${prodData.name} <span class="prices"> (${prodData.price}) </span></p>
+    <button class="detailsBtn"> <a href="productPage.html">See more details</a>
     </button>
     </div>
     `

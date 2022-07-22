@@ -3,28 +3,28 @@ const news =
     {
         name: "Vitamins Centrum",
         photo: "/meds/centrum.jpg" ,
-        price: "x ron",
+        price: "$22",
         availability: "in stock",
         description: "text"
     },
     {
         name: "Supplements Forcapil ",
         photo: "/meds/forcapil.jpg",
-        price: "y ron",
+        price: "$18",
         availability: "in stock",
         description: "text"
     },
     {
         name: "Vitamins Magnesium",
         photo: "meds/magnesium.jpg",
-        price: "z ron",
+        price: "$20",
         availability: "in stock",
         description: "text"
     },
     {
         name: "Vitamins Maximag",
         photo: "/meds/maximag.jpg",
-        price: "xs ron",
+        price: "$17",
         availability: "in stock",
         description: "text"
     },
@@ -32,7 +32,7 @@ const news =
     {
         name: "Vitamins Solaray",
         photo: "/meds/solaray.jpg",
-        price: "x ron",
+        price: "$12",
         availability: "in stock",
         description: "text"
     },
@@ -40,7 +40,7 @@ const news =
     {
         name: "Calcium",
         photo: "/meds/clorocalcin.jpg",
-        price: "x ron",
+        price: "$10",
         availability: "in stock",
         description: "text"
     },
@@ -48,7 +48,7 @@ const news =
     {
         name: "Flonidan",
         photo: "/meds/flonidan.jpg",
-        price: "x ron",
+        price: "$16",
         availability: "in stock",
         description: "text"
     },
@@ -56,7 +56,7 @@ const news =
     {
         name: "Atoprin",
         photo: "/meds/atoprin.jpg",
-        price: "x ron",
+        price: "$8",
         availability: "in stock",
         description: "text"
     },
@@ -64,7 +64,7 @@ const news =
     {
         name: "Sniztop",
         photo: "/meds/sniztop.jpg",
-        price: "x ron",
+        price: "$14",
         availability: "in stock",
         description: "text"
     },
@@ -72,7 +72,7 @@ const news =
     {
         name: "Alergin",
         photo: "/meds/alergin.jpg",
-        price: "x ron",
+        price: "$13",
         availability: "in stock",
         description: "text"
     },
@@ -80,7 +80,7 @@ const news =
     {
         name: "Alevia",
         photo: "/images/alevia.jpg",
-        price: "x ron",
+        price: "$17",
         availability: "in stock",
         description: "text"
     },
@@ -88,7 +88,7 @@ const news =
     {
         name: "Calmax",
         photo: "/images/product3.jpg",
-        price: "x ron",
+        price: "$15",
         availability: "in stock",
         description: "text"
     },
@@ -96,7 +96,7 @@ const news =
     {
         name: "Claritine",
         photo: "/images/product1.jpg",
-        price: "x ron",
+        price: "$10",
         availability: "in stock",
         description: "text"
     },
@@ -104,7 +104,7 @@ const news =
     {
         name: "Alergy",
         photo: "/meds/alergy.jpg",
-        price: "x ron",
+        price: "$19",
         availability: "in stock",
         description: "text"
     },
@@ -112,7 +112,7 @@ const news =
     {
         name: "Flonidan",
         photo: "/meds/flonidan.jpg",
-        price: "x ron",
+        price: "$17",
         availability: "in stock",
         description: "text"
     },
@@ -120,7 +120,7 @@ const news =
     {
         name: "Rival",
         photo: "/meds/rival.jpg",
-        price: "x ron",
+        price: "$10",
         availability: "in stock",
         description: "text"
     }
@@ -131,8 +131,8 @@ function newProd(prodData) {
     return `
     <div class="medication">
     <img class="med-photo" src="${prodData.photo}">
-    <h3 class="news-name">${prodData.name} <span class="prices"> (${prodData.price}) </span></h3>
-    <button class="seeDetails"> <a href="productPage.html">See more details</a>
+    <p class="news-name">${prodData.name} <span class="prices"> (${prodData.price}) </span></p>
+    <button class="detailsBtn"> <a href="productPage.html">See more details</a>
     </button>
     </div>
     `

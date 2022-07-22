@@ -35,6 +35,7 @@ body {
 .med-photo {
   width: 150px;
   height: 140px;
+  padding: 5px;
 }
 
 .show-title {
@@ -47,13 +48,14 @@ body {
   padding: 20px;
   border: 1px solid #9f9898;
   background-color: white;
+  width: 220px;
 }
 
 .personal-care {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(180px, 200px))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(180px, 200px));
+  -ms-grid-columns: (minmax(180px, 220px))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 220px));
   gap: 3rem;
   margin-top: 100px;
   cursor: pointer;
@@ -61,7 +63,11 @@ body {
   margin-left: 130px;
 }
 
-.seeDetails {
+.news-name {
+  padding: 5px;
+}
+
+.detailsBtn {
   width: 120px;
   height: 30px;
   background: #d4d4f0;
@@ -71,13 +77,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 5px;
   margin-left: 20px;
-  padding: 5px;
+  margin-bottom: 2px;
   border: 1px solid #beb8b8;
 }
 
-.seeDetails a {
+.detailsBtn a {
   text-decoration: none;
 }
 /*# sourceMappingURL=productsCat2.css.map */
