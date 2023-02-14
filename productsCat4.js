@@ -2,14 +2,14 @@ const news =
 [
     {
         name: "Almond milk",
-        photo: "/meds/isola.jpg" ,
+        photo: "meds/isola.jpg" ,
         price: "$7",
         availability: "in stock",
         description: "text"
     },
     {
         name: "Rice Cocoa milk ",
-        photo: "/meds/cocoa.jpg",
+        photo: "meds/cocoa.jpg",
         price: "$8",
         availability: "in stock",
         description: "text"
@@ -23,7 +23,7 @@ const news =
     },
     {
         name: "Soy milk",
-        photo: "/meds/soia.jpg",
+        photo: "meds/soia.jpg",
         price: "$5",
         availability: "in stock",
         description: "text"
@@ -31,7 +31,7 @@ const news =
 
     {
         name: "Vanilla Soy milk",
-        photo: "/meds/vanilla.jpg",
+        photo: "meds/vanilla.jpg",
         price: "$6",
         availability: "in stock",
         description: "text"
@@ -39,7 +39,7 @@ const news =
 
     {
         name: "Musli cereals",
-        photo: "/meds/musli.jpeg",
+        photo: "meds/musli.jpeg",
         price: "$11",
         availability: "in stock",
         description: "text"
@@ -47,7 +47,7 @@ const news =
 
     {
         name: "Granola",
-        photo: "/meds/granola.jpg",
+        photo: "meds/granola.jpg",
         price: "$14",
         availability: "in stock",
         description: "text"
@@ -55,7 +55,7 @@ const news =
 
     {
         name: "Chia seeds",
-        photo: "/meds/chia.jpg",
+        photo: "meds/chia.jpg",
         price: "$3",
         availability: "in stock",
         description: "text"
@@ -63,7 +63,7 @@ const news =
 
     {
         name: "Crackers",
-        photo: "/meds/rondele.jpg",
+        photo: "meds/rondele.jpg",
         price: "$2",
         availability: "in stock",
         description: "text"
@@ -71,7 +71,7 @@ const news =
 
     {
         name: "Peanut butter",
-        photo: "/meds/peanut.jpg",
+        photo: "meds/peanut.jpg",
         price: "$10",
         availability: "in stock",
         description: "text"
@@ -79,7 +79,7 @@ const news =
 
     {
         name: "Coconut oil",
-        photo: "/meds/cocos.jpg",
+        photo: "meds/cocos.jpg",
         price: "$9",
         availability: "in stock",
         description: "text"
@@ -87,7 +87,7 @@ const news =
 
     {
         name: "Classic tea",
-        photo: "/meds/yogi-classic.jpg",
+        photo: "meds/yogi-classic.jpg",
         price: "$4",
         availability: "in stock",
         description: "text"
@@ -95,7 +95,7 @@ const news =
 
     {
         name: "Ginger lemon tea",
-        photo: "/meds/yogi-ginger.jpg",
+        photo: "meds/yogi-ginger.jpg",
         price: "$4",
         availability: "in stock",
         description: "text"
@@ -103,7 +103,7 @@ const news =
 
     {
         name: "Inner Harmony tea",
-        photo: "/meds/yogi-harmony.jpg",
+        photo: "meds/yogi-harmony.jpg",
         price: "$4",
         availability: "in stock",
         description: "text"
@@ -111,7 +111,7 @@ const news =
 
     {
         name: "Immune Support tea",
-        photo: "/meds/yogi-immune.jpg",
+        photo: "meds/yogi-immune.jpg",
         price: "$4",
         availability: "in stock",
         description: "text"
@@ -119,7 +119,7 @@ const news =
 
     {
         name: "Relax tea",
-        photo: "/meds/yogi-relax.jpg",
+        photo: "meds/yogi-relax.jpg",
         price: "$4",
         availability: "in stock",
         description: "text"
@@ -127,7 +127,7 @@ const news =
 
     {
         name: "Women's balance",
-        photo: "/meds/yogi-women.jpg",
+        photo: "meds/yogi-women.jpg",
         price: "$4",
         availability: "in stock",
         description: "text"

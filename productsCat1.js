@@ -2,14 +2,14 @@ const news =
 [
     {
         name: "Aspacardin",
-        photo: "/meds/aspacardin.jpg" ,
+        photo: "meds/aspacardin.jpg" ,
         price: "$15",
         availability: "in stock",
         description: "text"
     },
     {
         name: "Aspenter",
-        photo: "/meds/aspenter.jpg",
+        photo: "meds/aspenter.jpg",
         price: "$22",
         availability: "in stock",
         description: "text"
@@ -23,7 +23,7 @@ const news =
     },
     {
         name: "Protecardin",
-        photo: "/meds/protecardin.jpg",
+        photo: "meds/protecardin.jpg",
         price: "$18",
         availability: "in stock",
         description: "text"
@@ -31,7 +31,7 @@ const news =
 
     {
         name: "Thrombo",
-        photo: "/meds/thrombo.jpg",
+        photo: "meds/thrombo.jpg",
         price: "$10",
         availability: "in stock",
         description: "text"
@@ -39,7 +39,7 @@ const news =
 
     {
         name: "Panagin forte",
-        photo: "/meds/panagin.jpg",
+        photo: "meds/panagin.jpg",
         price: "$9",
         availability: "in stock",
         description: "text"
@@ -47,7 +47,7 @@ const news =
 
     {
         name: "Clorocalcin",
-        photo: "/meds/clorocalcin.jpg",
+        photo: "meds/clorocalcin.jpg",
         price: "$15",
         availability: "in stock",
         description: "text"
@@ -55,7 +55,7 @@ const news =
 
     {
         name: "Cal D vita",
-        photo: "/meds/cal-d-vita.jpg",
+        photo: "meds/cal-d-vita.jpg",
         price: "$24",
         availability: "in stock",
         description: "text"
@@ -71,7 +71,7 @@ const news =
 
     {
         name: "Voltaren",
-        photo: "/meds/voltaren.jpg",
+        photo: "meds/voltaren.jpg",
         price: "$12",
         availability: "in stock",
         description: "text"
@@ -79,7 +79,7 @@ const news =
 
     {
         name: "Prostamol",
-        photo: "/meds/prostamol.jpg",
+        photo: "meds/prostamol.jpg",
         price: "$27",
         availability: "in stock",
         description: "text"
@@ -95,7 +95,7 @@ const news =
 
     {
         name: "Otipax",
-        photo: "/meds/otipax.jpg",
+        photo: "meds/otipax.jpg",
         price: "$15",
         availability: "in stock",
         description: "text"
@@ -103,7 +103,7 @@ const news =
 
     {
         name: "Ototis",
-        photo: "/meds/ototis.jpg",
+        photo: "meds/ototis.jpg",
         price: "$11",
         availability: "in stock",
         description: "text"
@@ -111,7 +111,7 @@ const news =
 
     {
         name: "Flonidan",
-        photo: "/meds/flonidan.jpg",
+        photo: "meds/flonidan.jpg",
         price:"$26",
         availability: "in stock",
         description: "text"
@@ -119,7 +119,7 @@ const news =
 
     {
         name: "Rival",
-        photo: "/meds/rival.jpg",
+        photo: "meds/rival.jpg",
         price: "$10",
         availability: "in stock",
         description: "text"

@@ -2,14 +2,14 @@ const news =
 [
     {
         name: "Dettol",
-        photo: "/meds/dettol.jpg" ,
+        photo: "meds/dettol.jpg" ,
         price: "$ 28",
         availability: "in stock",
         description: "text"
     },
     {
         name: "Hygenium",
-        photo: "/meds/hygienium.jpg",
+        photo: "meds/hygienium.jpg",
         price: "$ 32",
         availability: "in stock",
         description: "text"
@@ -23,7 +23,7 @@ const news =
     },
     {
         name: "Sudocrem",
-        photo: "/meds/sudocrem.jpg",
+        photo: "meds/sudocrem.jpg",
         price: "$ 35",
         availability: "in stock",
         description: "text"
@@ -31,7 +31,7 @@ const news =
 
     {
         name: "Exfoliant",
-        photo: "/meds/exfoliant.jpg",
+        photo: "meds/exfoliant.jpg",
         price: "$ 42",
         availability: "in stock",
         description: "text"
@@ -39,23 +39,23 @@ const news =
 
     {
         name: "Shampoo Klorane",
-        photo: "/meds/klorane.jpg",
-        price: "$ 56",
+        photo: "meds/klorane.jpg",
+        price: "$ 46",
         availability: "in stock",
         description: "text"
     },
 
     {
         name: "Hair mask Elseve",
-        photo: "/meds/elseve.jpg",
-        price: "$ 28",
+        photo: "meds/elseve.jpg",
+        price: "$ 18",
         availability: "in stock",
         description: "text"
     },
 
     {
         name: "Avene MEN",
-        photo: "/meds/avene-men.jpg",
+        photo: "meds/avene-men.jpg",
         price: "$ 22",
         availability: "in stock",
         description: "text"
@@ -63,7 +63,7 @@ const news =
 
     {
         name: "Tarr",
-        photo: "/meds/tarr.jpg",
+        photo: "meds/tarr.jpg",
         price: "$ 15",
         availability: "in stock",
         description: "text"
@@ -71,7 +71,7 @@ const news =
 
     {
         name: "Bioderma",
-        photo: "/meds/bioderma.jpg",
+        photo: "meds/bioderma.jpg",
         price: "$ 28",
         availability: "in stock",
         description: "text"
@@ -81,7 +81,7 @@ const news =
 
     {
         name: "Lipogel",
-        photo: "/meds/lipogel.jpg",
+        photo: "meds/lipogel.jpg",
         price: "$ 15",
         availability: "in stock",
         description: "text"
@@ -89,7 +89,7 @@ const news =
 
     {
         name: "Canephron",
-        photo: "/meds/voltaren.jpg",
+        photo: "meds/voltaren.jpg",
         price: "$ 10",
         availability: "in stock",
         description: "text"
@@ -105,7 +105,7 @@ const news =
 
     {
         name: "Ototis",
-        photo: "/meds/ototis.jpg",
+        photo: "meds/ototis.jpg",
         price: "$ 29",
         availability: "in stock",
         description: "text"
@@ -113,7 +113,7 @@ const news =
 
     {
         name: "Flonidan",
-        photo: "/meds/flonidan.jpg",
+        photo: "meds/flonidan.jpg",
         price: "$ 18",
         availability: "in stock",
         description: "text"
@@ -121,14 +121,14 @@ const news =
 
     {
         name: "Rival",
-        photo: "/meds/rival.jpg",
+        photo: "meds/rival.jpg",
         price: "$ 20",
         availability: "in stock",
         description: "text"
     },
 {
     name: "Veet",
-        photo: "/images/veet.jpg",
+        photo: "images/veet.jpg",
         price: "$ 23",
         availability: "in stock",
         description: "text"
@@ -136,7 +136,7 @@ const news =
 
 {
     name: "Deodorant",
-        photo: "/images/borotalco.jpg",
+        photo: "images/borotalco.jpg",
         price: "$ 12",
         availability: "in stock",
         description: "text"

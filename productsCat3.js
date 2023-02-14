@@ -2,14 +2,14 @@ const news =
 [
     {
         name: "Vitamins Centrum",
-        photo: "/meds/centrum.jpg" ,
+        photo: "meds/centrum.jpg" ,
         price: "$22",
         availability: "in stock",
         description: "text"
     },
     {
         name: "Hair Supplements",
-        photo: "/meds/forcapil.jpg",
+        photo: "meds/forcapil.jpg",
         price: "$18",
         availability: "in stock",
         description: "text"
@@ -23,7 +23,7 @@ const news =
     },
     {
         name: "Vitamins Maximag",
-        photo: "/meds/maximag.jpg",
+        photo: "meds/maximag.jpg",
         price: "$17",
         availability: "in stock",
         description: "text"
@@ -31,7 +31,7 @@ const news =
 
     {
         name: "Vitamins Solaray",
-        photo: "/meds/solaray.jpg",
+        photo: "meds/solaray.jpg",
         price: "$12",
         availability: "in stock",
         description: "text"
@@ -39,7 +39,7 @@ const news =
 
     {
         name: "Calcium",
-        photo: "/meds/clorocalcin.jpg",
+        photo: "meds/clorocalcin.jpg",
         price: "$10",
         availability: "in stock",
         description: "text"
@@ -47,7 +47,7 @@ const news =
 
     {
         name: "Flonidan",
-        photo: "/meds/flonidan.jpg",
+        photo: "meds/flonidan.jpg",
         price: "$16",
         availability: "in stock",
         description: "text"
@@ -55,7 +55,7 @@ const news =
 
     {
         name: "Atoprin",
-        photo: "/meds/atoprin.jpg",
+        photo: "meds/atoprin.jpg",
         price: "$8",
         availability: "in stock",
         description: "text"
@@ -63,7 +63,7 @@ const news =
 
     {
         name: "Sniztop",
-        photo: "/meds/sniztop.jpg",
+        photo: "meds/sniztop.jpg",
         price: "$14",
         availability: "in stock",
         description: "text"
@@ -71,7 +71,7 @@ const news =
 
     {
         name: "Alergin",
-        photo: "/meds/alergin.jpg",
+        photo: "meds/alergin.jpg",
         price: "$13",
         availability: "in stock",
         description: "text"
@@ -79,7 +79,7 @@ const news =
 
     {
         name: "Alevia",
-        photo: "/images/alevia.jpg",
+        photo: "images/alevia.jpg",
         price: "$17",
         availability: "in stock",
         description: "text"
@@ -87,7 +87,7 @@ const news =
 
     {
         name: "Calmax",
-        photo: "/images/product3.jpg",
+        photo: "images/product3.jpg",
         price: "$15",
         availability: "in stock",
         description: "text"
@@ -95,7 +95,7 @@ const news =
 
     {
         name: "Claritine",
-        photo: "/images/product1.jpg",
+        photo: "images/product1.jpg",
         price: "$10",
         availability: "in stock",
         description: "text"
@@ -103,7 +103,7 @@ const news =
 
     {
         name: "Alergy",
-        photo: "/meds/alergy.jpg",
+        photo: "meds/alergy.jpg",
         price: "$19",
         availability: "in stock",
         description: "text"
@@ -111,7 +111,7 @@ const news =
 
     {
         name: "Flonidan",
-        photo: "/meds/flonidan.jpg",
+        photo: "meds/flonidan.jpg",
         price: "$17",
         availability: "in stock",
         description: "text"
@@ -119,7 +119,7 @@ const news =
 
     {
         name: "Rival",
-        photo: "/meds/rival.jpg",
+        photo: "meds/rival.jpg",
         price: "$10",
         availability: "in stock",
         description: "text"
