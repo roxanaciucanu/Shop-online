@@ -10,7 +10,8 @@ const userLogin = () => {
   ) {
     //Here we're getting the item from the store that has the given value (email). The value of getItem(emailFieldLogin.value) is the password, so we're validating if they both match.
     alert("Successfully logged in!"); // Feel free to add more steps if the condition above is met.
-    window.location.replace("/index.html");
+    localStorage.setItem("loggedUser", localStorage.getItem(emailLogin.value));
+    location.href = "/index.html";
   } else {
     alert("Invalid credentials!");
   }

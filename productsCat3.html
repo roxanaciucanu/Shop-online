@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="productsCat3.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="header.css">
@@ -13,19 +16,15 @@
 <body>
     <header>
         <div class="logo">
-            <a href="">
+            <a href="index.html">
                 <img src="/images/logo.jpg" alt="logo" width="250px" height="120px">
             </a>
         </div>
-        <div class="hamburger">
-            <a href="#">
-            <i class="fa-solid fa-bars hamburger-icon"></i>
-        </a>
-    </div>
+        
         <div class="wrapper">
             <div class="find">
-                <input type="search" id="search" placeholder="What would you like to search for today?">
-                <button class="search">Search</button>
+                <input type="search" id="search-text" placeholder="Search..."> <i class="fa-solid fa-magnifying-glass" id="input-icon"></i></input>
+                <button class="search-btn"><i class="fa-solid fa-magnifying-glass" id="search-icon"></i></button>
 
             <div class="auto-fill">
                 <ul id="filled">
@@ -56,6 +55,8 @@
 
         <nav>
             <ul>
+                <li class="home-btn"><a href="index.html">Home</a>
+                </li>
                 <li><a href="register.html">
                         Register</a></li>
                 <li><a href="login.html">
@@ -81,75 +82,59 @@
 
     </header>
     <div class="menu">
-        <div>
-            <a href="/">Home</a>
-        </div>
-        <div class="dropdown">
-            
-            <button class="prod">
-                <i class="fa-solid fa-bars hamburger-menu"></i>
-                Products</button>
-            <div class="dropdown-menu">
-                <ul class="prod-categories">
-                    <li><a href="productsCat1.html" class="link">Medication OTC
-                            <i class="fas fa-caret-right"></i>
-                        </a>
-                        <div class="dropdown-menu1">
-                            <ul>
-                                <li><a href="productsCat1.html">Cardiology</a></li>
-                                <li><a href="productsCat1.html">Reumathology</a></li>
-                                <li><a href="productsCat1.html">Urology</a></li>
-                                <li><a href="productsCat1.html">ORL</a></li>
-                                <li><a href="productsCat1.html">Alergies</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                  
-                    <li><a href="productsCat2.html" class="link">Personal care
-                        <i class="fas fa-caret-right"></i>
-                    </a>
-                        <div class="dropdown-menu3">
-                            <ul>
-                                <li><a href="productsCat2.html">Sanitizer</a></li>
-                                <li><a href="productsCat2.html">Child care</a></li>
-                                <li><a href="productsCat2.html">Men care</a></li>
-                                <li><a href="productsCat2.html">Women care</a></li>
-                                <li><a href="productsCat2.html">Hair care</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="productsCat3.html" class="link">Vitamins and suplements
-                        <i class="fas fa-caret-right"></i>
-                    </a>
-                        <div class="dropdown-menu4">
-                            <ul>
-                                <li><a href="productsCat3.html">Nervous system</a></li>
-                                <li><a href="productsCat3.html">Endocrine system</a></li>
-                                <li><a href="productsCat3.html">Immunity</a></li>
-                                <li><a href="productsCat3.html">Circulation</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="productsCat4.html" class="link">Diet and wellness
-                        <i class="fas fa-caret-right"></i>
-                    </a>
-                        <div class="dropdown-menu5">
-                            <ul>
-                                <li><a href="productsCat4.html">Tea</a></li>
-                                <li><a href="productsCat4.html">Natural juice and syrup</a></li>
-                                <li><a href="productsCat4.html">Vegetal drinks</a></li>
-                                <li><a href="productsCat4.html">Seeds and dried fruits</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
+        <div class="prod-categories">
 
+            <a href="productsCat1.html" class="link">Medication OTC
+                <i class="fas fa-caret-right"></i> </a>
+            <div class="dropdown-menuActive">
+                <ul class="active">
+                    <li><a href="productsCat1.html">Cardiology</a></li>
+                    <li><a href="productsCat1.html">Reumathology</a></li>
+                    <li><a href="productsCat1.html">Urology</a></li>
+                    <li><a href="productsCat1.html">ORL</a></li>
+                    <li><a href="productsCat1.html">Alergies</a></li>
+                </ul>
             </div>
 
+
+            <a href="productsCat1.html" class="link">Personal care
+                <i class="fas fa-caret-right"></i> </a>
+            <div class="dropdown-menuActive">
+                <ul>
+                    <li><a href="productsCat2.html">Sanitizer</a></li>
+                    <li><a href="productsCat2.html">Child care</a></li>
+                    <li><a href="productsCat2.html">Men care</a></li>
+                    <li><a href="productsCat2.html">Women care</a></li>
+                    <li><a href="productsCat2.html">Hair care</a></li>
+                </ul>
+            </div>
+
+
+            <a href="productsCat1.html" class="link">Vitamins and suplements
+                <i class="fas fa-caret-right"></i> </a>
+            <div class="dropdown-menuActive">
+                <ul>
+                    <li><a href="productsCat3.html">Nervous system</a></li>
+                    <li><a href="productsCat3.html">Endocrine system</a></li>
+                    <li><a href="productsCat3.html">Respiratory system</a></li>
+                    <li><a href="productsCat3.html">Immunity</a></li>
+                    <li><a href="productsCat3.html">Circulation</a></li>
+                </ul>
+            </div>
+
+            <a href="productsCat4.html" class="link">Diet and wellness
+                <i class="fas fa-caret-right"></i>
+            </a>
+            <div class="dropdown-menuActive">
+                <ul>
+                    <li><a href="productsCat4.html">Tea</a></li>
+                    <li><a href="productsCat4.html">Natural juice and syrup</a></li>
+                    <li><a href="productsCat4.html">Vegetal drinks</a></li>
+                    <li><a href="productsCat4.html">Seeds and dried fruits</a></li>
+                    <li><a href="productsCat4.html">Aromatherapy</a></li>
+                </ul>
+            </div>
         </div>
-        <a href="/">Newsletter</a>
-        <a href="/">Careers</a>
-        <a href="/">Loyalty program</a>
 
     </div>
 

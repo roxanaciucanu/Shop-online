@@ -15,7 +15,7 @@
   background-color: antiquewhite;
 }
 
-.formular form {
+.formular .form {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[6];
@@ -26,11 +26,11 @@
   width: 400px;
 }
 
-.formular form div {
+.formular .form div {
   padding: 10px;
 }
 
-.formular form .div1 {
+.formular .form .div1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -39,12 +39,12 @@
   grid-row: 1/2;
 }
 
-.formular form .div1 input {
+.formular .form .div1 input {
   border: 2px solid #a1c5d1;
   width: 180px;
 }
 
-.formular form .div2 {
+.formular .form .div2 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -53,12 +53,12 @@
   grid-row: 1/2;
 }
 
-.formular form .div2 input {
+.formular .form .div2 input {
   border: 2px solid #a1c5d1;
   width: 180px;
 }
 
-.formular form .div3 {
+.formular .form .div3 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -67,12 +67,12 @@
   grid-row: 2/3;
 }
 
-.formular form .div3 input {
+.formular .form .div3 input {
   border: 2px solid #a1c5d1;
   width: 180px;
 }
 
-.formular form .div4 {
+.formular .form .div4 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -81,7 +81,7 @@
   grid-row: 2/3;
 }
 
-.formular form .div4 input {
+.formular .form .div4 input {
   border: 2px solid #a1c5d1;
   width: 180px;
 }

@@ -1,4 +1,18 @@
 const rootElem = document.getElementById("root");
+let loggedUser = localStorage.getItem("loggedUser") || null;
+console.log(loggedUser);
+const registerBtn = document.getElementById("register-btn");
+const loginBtn = document.getElementById("login-btn");
+
+const logout = () => {
+  localStorage.removeItem("loggedUser");
+  location.href = "/index.html";
+};
+
+if (loggedUser) {
+  registerBtn.innerHTML = `<p>Welcome, ${JSON.parse(loggedUser).name}</p>`;
+  loginBtn.innerHTML = `<button onclick="logout()">Logout</button>`;
+}
 
 function renderShop() {
   const shopContent = `
@@ -6,7 +20,6 @@ function renderShop() {
            
 </div>
 
-</div>
 
 <section class="shop">
 <h2 class="summer">Featured products</h2>
@@ -16,7 +29,7 @@ function renderShop() {
     <div class="product-box">
         <img src="images/aloe-vera.jpg" alt="" class="prod-img">
         <p class="prod-title">Aloe vera gel</p>
-        <span class="price">$30</span>
+        <span class="price">$8</span>
         <i class="fa-solid fa-bag-shopping add-cart"></i>
         <button class="seeDetails">See more details
             </button>
@@ -25,16 +38,16 @@ function renderShop() {
     <div class="product-box">
         <img src="images/elmex.jpg"  alt="" class="prod-img">
         <p class="prod-title">Elmex toothpaste</p>
-        <span class="price">$20</span>
+        <span class="price">$12</span>
         <i class="fa-solid fa-bag-shopping add-cart"></i>
-        <button class="seeDetails"> See details
+        <button class="seeDetails"> See more details
         </button>
     </div>
 
     <div class="product-box">
         <img src="images/betadine.jpg"  alt="" class="prod-img">
         <p class="prod-title">Betadine</p>
-        <span class="price">$30</span>
+        <span class="price">$3</span>
         <i class="fa-solid fa-bag-shopping add-cart"></i>
         <button class="seeDetails"> See more details
         </button>
@@ -43,7 +56,7 @@ function renderShop() {
     <div class="product-box">
         <img src="images/product2.jpg"  alt="" class="prod-img">
         <p class="prod-title">SPF50 La Roche Posay</p>
-        <span class="price">$30</span>
+        <span class="price">$10</span>
         <i class="fa-solid fa-bag-shopping add-cart"></i>
         <button class="seeDetails"> See more details
         </button>
@@ -52,7 +65,7 @@ function renderShop() {
     <div class="product-box">
         <img src="images/Herbagen.jpg"  alt="" class="prod-img">
         <p class="prod-title">Herbagen hand cream</p>
-        <span class="price">$30</span>
+        <span class="price">$5</span>
         <i class="fa-solid fa-bag-shopping add-cart"></i>
         <button class="seeDetails"> See more details
         </button>
@@ -61,7 +74,7 @@ function renderShop() {
     <div class="product-box">
         <img src="images/autobronzant.jpg"  alt="" class="prod-img">
         <p class="prod-title">Vichy</p>
-        <span class="price">$30</span>
+        <span class="price">$9</span>
         <i class="fa-solid fa-bag-shopping add-cart"></i>
         <button class="seeDetails"> See more details
         </button>
@@ -70,7 +83,7 @@ function renderShop() {
     <div class="product-box">
         <img src="images/glow.jpg" alt=""  class="prod-img">
         <p class="prod-title">Glow</p>
-        <span class="price">$30</span>
+        <span class="price">$12</span>
         <i class="fa-solid fa-bag-shopping add-cart"></i>
         <button class="seeDetails">See more details
         </button>
@@ -79,7 +92,7 @@ function renderShop() {
     <div class="product-box">
         <img src="meds/solaray.jpg" alt=""  class="prod-img">
         <p class="prod-title">Vitamin C</p>
-        <span class="price">$10</span>
+        <span class="price">$4</span>
         <i class="fa-solid fa-bag-shopping add-cart"></i>
         <button class="seeDetails">See more details
         </button>
@@ -88,7 +101,7 @@ function renderShop() {
     <div class="product-box">
         <img src="meds/magnesium.jpg" alt=""  class="prod-img">
         <p class="prod-title">Magnesium</p>
-        <span class="price">$25</span>
+        <span class="price">$6</span>
         <i class="fa-solid fa-bag-shopping add-cart"></i>
         <button class="seeDetails">See more details
         </button>
@@ -97,7 +110,7 @@ function renderShop() {
     <div class="product-box">
         <img src="images/uriage.jpg" alt=""  class="prod-img">
         <p class="prod-title">SPF50 Uriage</p>
-        <span class="price">$30</span>
+        <span class="price">$11</span>
         <i class="fa-solid fa-bag-shopping add-cart"></i>
         <button class="seeDetails">See more details
         </button>
@@ -111,22 +124,75 @@ function renderShop() {
 
 renderShop();
 
+function addProdToCart(title, price, prodImg) {
+  cartShopBox = document.createElement("div");
+  cartShopBox.classList.add("cart-box");
+  let cartItems = document.getElementsByClassName("cart-content")[0];
+
+  
+
+  let cartBoxContent = `
+                   <img src="${prodImg}" alt="" class="cart-img">
+                   <div class="detail-box">
+                   <div class="cart-prod-title">${title}</div>
+                   <div class="cart-price">${price}</div>
+                   <input type="number" value="1" class="cart-quantity">
+                   </div>
+                   <i class="fa-solid fa-trash cart-remove"></i> `;
+
+  cartShopBox.innerHTML = cartBoxContent;
+  cartItems.append(cartShopBox);
+  cartShopBox
+    .getElementsByClassName("cart-remove")[0]
+    .addEventListener("click", removeCartElements);
+  cartShopBox
+    .getElementsByClassName("cart-quantity")[0]
+    .addEventListener("change", quantityChanged);
+}
+function addCartClickedDetails(title, price, img) {
+  addProdToCart(title, price, img);
+  updateTotal();
+}
+
+function updateTotal() {
+  let cartContent = document.getElementsByClassName("cart-content")[0];
+  let cartBoxes = cartContent.getElementsByClassName("cart-box");
+  let total = 0;
+  for (let i = 0; i < cartBoxes.length; i++) {
+    let cartBox = cartBoxes[i];
+    let priceItem = cartBox.getElementsByClassName("cart-price")[0];
+    let quantityItem = cartBox.getElementsByClassName("cart-quantity")[0];
+    let price = parseInt(priceItem.innerText.replace("$", ""));
+    let quantity = quantityItem.value;
+    total = total + price * quantity;
+  }
+}
+
+//Product-page
+
 function renderDetails(e) {
   const info = e.target.parentNode.childNodes;
   const detailsView = `
-<h3 class="categorySelect">Home /Medicaments</h3>
+
+  <button class="backBtn" onclick="renderAfterBack()"> <i class="fa-solid fa-backward"></i>
+  Go back</button>
 <div class="prodPage">
+
 <div class="prodBox">
 
-    <img src=${info[1].src} width="350px" height="320px" id="prodImage">
-    <i class="fa-solid fa-left"></i>
-    <button class="backBtn" onclick="renderAfterBack()">
-    Go back</button>
+    <img src=${info[1].src} width="350px" height="340px" id="prodImage">
     </div>
   
     <div class="product">
     <div class="prodInfo">
         <h2>${info[3].innerHTML}</h2>
+        <span class="review"> 
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        <i class="fa-regular fa-star"></i>
+        Write a review</span>
         <h3 class="prodPrice">${info[5].innerHTML}</h3>
     </div>
     <div class="prodDetails">
@@ -146,38 +212,51 @@ function renderDetails(e) {
         <li>Home delivery</li>
     </ul>
     <div class="addToCart">
-        <i class="fa-solid fa-bag-shopping cart-symbol">  add to cart</i>
-       
+        <i class="fa-solid fa-bag-shopping cart-symbol" ></i>
+       <p class= "addCart-text"> Add to cart</p>
+       <input type="number" value="0" class="cart-quantity">
     </div>
     </div>
-    
 
 </div>
 
 `;
+
   rootElem.innerHTML = detailsView;
+ 
+  
+  let btnCart = document.getElementsByClassName("cart-quantity")[0]
+
+
+    btnCart.addEventListener("click", () => {
+      addCartClickedDetails(info[3].innerHTML, info[5].innerHTML, info[1].src);
+    });
+
+    btnCart.onclick= () =>{
+    if(btnCart.value > 0){
+      cart.classList.add("active")
+    }else{
+      cart.classList.remove("active")
+    }
+    
+    }
+
 }
 
-//   function testing(e) {
-//     console.log(e.target.parentNode.childNodes[9])
-//   }
+
+  // function testing(e) {
+  //   console.log(e.target.parentNode.childNodes[9])
+  // }
 
 
-//This won't execute unless I refresh the window, because the script only executes once when the window loggs
+//This won't execute unless I refresh the window, because the script only executes once the window loggs
 const btnSeeDetails = document.getElementsByClassName("seeDetails");
-const detailsButtonn = document.getElementsByClassName("detailsBtn")
+const detailsButtonn = document.getElementsByClassName("detailsBtn");
 
 for (let index = 0; index < btnSeeDetails.length; index++) {
   btnSeeDetails[index].addEventListener("click", renderDetails);
-  detailsButtonn[index].addEventListener("click", renderDetails);
 }
 
-const addClickListener = () => {
-  for (let i = 0; i < addCart.length; i++) {
-    let button = addCart[i];
-    button.addEventListener("click", addCartClicked);
-  }
-};
 
 //I had to create another function to render the 'rendershop' in order to be able to add the addEventListeners again
 const renderAfterBack = () => {
@@ -189,4 +268,4 @@ const renderAfterBack = () => {
     btnSeeDetails[index].addEventListener("click", renderDetails);
   }
   addClickListener();
-};
+}

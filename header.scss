@@ -17,6 +17,15 @@ nav{
     justify-content: space-around;
     margin: 40px;
     padding: 10px;
+    li{
+        a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        color:blue;
+    }
+        }
+    }
    }
 }
 
@@ -25,48 +34,64 @@ nav{
     flex-direction: column;
 }
 
-.hamburger{
-    display: none;
-}
-
 input{
-    width: 450px;
-    border-radius: 1%;
-    font-size: large;
-    
+    padding-left: 25px;
+}
+input[type=search] {
+    position: relative;
+    width: 400px;
+    height: 40px;
+    border-radius: 2%;
+    border: 1px solid rgb(201, 194, 194);
+    font-size: medium;
+    text-align: left;
+   
 }
 
 input:focus{
-    outline: none;
     position: relative;
+    outline: 1px solid rgb(121, 121, 253);
+}
+input:focus::-webkit-input-placeholder{
+ padding-left: 30px;
+}
+input:focus::-webkit-input[type=search]{
+    padding-left: 30px;
 }
 
 
-.search{
+input:focus + #input-icon{
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+}
+
+.search-btn {
     height: 40px;
-    width: 100px;
+    width: 50px;
     border: none;
-    background-color: rgb(81, 182, 81);
-    position: relative;
-    color: white;
-    font-weight: bolder;
-    font-size: 15lpx;
-    right:3px;
+    background-color:  rgb(212, 212, 240);
     cursor: pointer;
-    
 }
+
 .find{
     text-align: center;
     position: relative;
+}
+#search-icon{
+    color:black;
+}
+
+#input-icon{
+    position: absolute;
+    left:3px;
+    top: 10px;
+    opacity: 0;
+    color: grey;
+    height: 30px;
    
-    
 }
-.find input{
-    height: 45px;
-    outline: none;
-    
-    
-}
+
 .auto-fill{
     
     max-height: 280px;
@@ -87,8 +112,6 @@ input:focus{
         }
     
 }
-
-
 
 .wrapper{
     position: absolute;
@@ -111,17 +134,6 @@ input:focus{
 
 }
 
-.add-cart {
-    position: absolute;
-    right: 0;
-    bottom: 0px;
-    cursor: pointer;
-    padding: 15px;
-&:hover{
-    background-color:  rgb(81, 182, 81); ;
-}
-}
-
 .cart{
     position: fixed;
     top:0;
@@ -139,8 +151,14 @@ input:focus{
 }
 
 #cart-icon{
-    margin-top: 15px;
-    font-size: 30px;
+    margin-top: 10px;
+    font-size: 15px;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+#cart-icon:hover{
+    color:blue;
+    cursor: pointer;
 }
 .cart-box {
     display: grid;
@@ -160,13 +178,6 @@ input:focus{
     height: 200px;
     object-fit: contain;
     padding: 3px;
-}
-.cart-quantity{
-    border: 1px solid black;
-    outline-color: black;
-    width: 3rem;
-    text-align: center;
-    font-size: 1rem;
 }
 
 .detail-box{

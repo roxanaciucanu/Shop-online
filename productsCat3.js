@@ -8,14 +8,14 @@ const news =
         description: "text"
     },
     {
-        name: "Supplements Forcapil ",
+        name: "Hair Supplements",
         photo: "/meds/forcapil.jpg",
         price: "$18",
         availability: "in stock",
         description: "text"
     },
     {
-        name: "Vitamins Magnesium",
+        name: "Magnesium",
         photo: "meds/magnesium.jpg",
         price: "$20",
         availability: "in stock",

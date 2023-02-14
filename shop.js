@@ -25,10 +25,16 @@ if (document.readyState == "loading"){
 
 //Add to cart
 let addCart = document.getElementsByClassName("add-cart");
+
 for (let i = 0; i < addCart.length; i++) {
     let button = addCart[i];
     button.addEventListener("click", addCartClicked)
+    button.onclick = () => {
+        cart.classList.add("active")
+
+    }
 }
+
 function addCartClicked(event) {
     let button = event.target;
     let shopProducts = button.parentElement;
@@ -36,21 +42,17 @@ function addCartClicked(event) {
     let price = shopProducts.getElementsByClassName("price")[0].innerText;
     let prodImg = shopProducts.getElementsByClassName("prod-img")[0].src;
     
-    
     addProdToCart(title,price,prodImg);
     updateTotal()
+
 }
+
 let cartShopBox ;
 function addProdToCart(title,price,prodImg) {
     cartShopBox = document.createElement("div")
     cartShopBox.classList.add("cart-box");
     let cartItems = document.getElementsByClassName("cart-content")[0];
-    // let cartItemsNames = cartItems.getElementsByClassName("cart-prod-title");
-    // for (let i = 0; i < cartItemsNames.length; i++) {
-    // alert("You have already added this item to cart")
-    // return;
-    // }
-
+    
     let cartBoxContent = `
                    <img src="${prodImg}" alt="" class="cart-img">
                    <div class="detail-box">

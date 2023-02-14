@@ -1,15 +1,23 @@
 .prodPage{
-    padding: 80px;
+    padding: 50px;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    
     
 }
 .product{
     border: 1px solid rgb(240, 226, 226);
     height: 500px;
     width: 700px;
-    padding: 25px;
+    padding: 40px;
 
+}
+.prodBox{
+    margin-right: 60px;
+    margin-top: 50px;
+}
+.prodInfo{
+    margin-top: 5px;
 }
 .delivery{
     list-style: circle;
@@ -17,23 +25,73 @@
         padding: 5px;
     }
 }
+.prodPrice{
+    font-size: 30px;
+    color: red;
+}
 .prodInfo, .prodPrice, .prodDetails{
-    padding: 10px;
+    padding:8px;
     
 }
+
 .delOption{
 padding: 5px;
 }
 .addToCart {
-background-color: rgb(81, 182, 81);
-text-align: center;
-margin-top: 10px;
-width: 250px;
-height: 70px ;
-padding: 10px;
+background-color: rgb(212, 212, 240);
+margin-top: 20px;
+font-size: 20px;
+display: flex;
+align-items: center;
+text-align: left;
+width: 200px;
+height: 40px ;
 border: 1px solid  rgb(240, 226, 226);
-.cart-symbol{
-padding: 10px;
+cursor: pointer;
+&:hover{
+    box-shadow: 0 4px 5px 0 black;
+}
 }
 
+.addCart-text{
+    margin-right: 7px;
+}
+
+.cart-quantity{
+    border: 1px solid black;
+    outline-color: black;
+    width: 2.5rem;
+    text-align: center;
+    font-size: 1rem;
+    padding-left: 1.5px;
+}
+
+.cart-symbol{
+padding: 10px;
+font-size: 20px;
+color: black;
+animation-timing-function: ease-in-out
+
+}
+
+.backBtn{
+    padding: 5px;
+    margin: 5px;
+    margin-left:5px;
+    width: 140px;
+    height: 35px;
+    background: rgb(225, 225, 241);
+    border: 1px solid rgb(233, 233, 247);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: black;
+    font-size: 20px;
+}
+
+.fa-regular{
+    color: gold;
+    font-size: 17px;
+}
+.review{
+    font-size: 18px;
 }

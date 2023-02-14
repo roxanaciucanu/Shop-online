@@ -3,13 +3,22 @@
 @import "colors";
 @import "prodStyle";
 
-
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100%;
+}
 .menu{
+    box-sizing: border-box;
     background-color:rgb(66, 103, 203) ;
     display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    
+    justify-content: space-evenly;
+    height: 70px;
+    width: 100%;
+    margin: 0;
+   
     a{
         color:white;
         &:link{
@@ -18,126 +27,71 @@
     }
 }
 
- .prod{
-    font-size: 25px;
-    color: white;
-    background: none;
-    border: none;
-    cursor: pointer;
-    &:hover{
-        color: rgb(210, 19, 16);
-    }
- }
-.dropdown{
-    position: relative;
- 
-    .link{
-        color:black;
-        font-size: 22px;
-       
-    }
-    .link:hover{
-        color: blue;
-        font-weight:bold;
-    }
-}
-.dropdown-menu{
-    position: absolute;
-    z-index: 1;
-    top: 50px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 4px;
-    box-shadow: 0 4px 7px rgb(0, 0, .1);
-    opacity: 0;
-    width: 350px;
-    height: 220px;
 
-   
-}
-.dropdown > .prod:focus + .dropdown-menu{
-opacity: 1;
+.prod-categories{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin-left: 10px;
 }
 
-i{
-   padding-left: 20px;
-}
-    
+.link{
+    padding: 4px;
+    width: fit-content;
+    line-height: 1;
+    display: inline-block;
+    text-shadow: 0px 4px 12px black;
+    }
 
-.dropdown-menu1, .dropdown-menu2, .dropdown-menu3, .dropdown-menu4, .dropdown-menu5 {
-    display: none;
-  ul {
-    list-style: none;
+.dropdown-menuActive{
+position: relative;
+opacity: 0;
+top:40px;
+box-shadow: 0 2px 5px 0 black;
+transition: opacity 100ms ease-in-out;
+margin-right: 12px;
+
+ul{
+background-color: white;
+border-radius: 5px;
+height: fit-content;
+width: 258px;
+padding-right: 21px;
+
+
     li{
-    font-size: 20px;
-}
-  }
-}
-.dropdown-menu ul li:hover .dropdown-menu1{
-   @include styling;
-    left:220px;
-    top:10px;
-    a{
-        color:black ;
+        list-style-type: none;
+        height: fit-content;     
+        width: fit-content;
+        
+        a{
+            color: black; 
+            padding: 15px;
+            width: fit-content;
+        }
     }
     li:hover{
-        background-color: blue;
-        color:white;
+        background-color: rgb(206, 206, 241);
     }
+}
+  
+}
+
+
+    .prod-categories > .link:focus + .dropdown-menuActive{  
+        opacity: 1;
+    }
+     
     
-   
-}
-
-.dropdown-menu ul li:hover .dropdown-menu3{
-  @include styling;
-    top:30px;
-    left:200px;
-    a{
-        color:black ;
-    }
-      li:hover{
-        background-color: blue;
-        color:white;
-    }
-   
-}
-.dropdown-menu ul li:hover .dropdown-menu4{
-   @include styling;
-    top:60px;
-    left:300px;
-    a{
-        color:black ;
-    }
-    li:hover{
-        background-color: blue;
-        color:white;
-    }
-   
-}
-.dropdown-menu ul li:hover .dropdown-menu5{
-    @include styling;
-    top:100px;
-    left:200px;
-    a{
-        color:black ;
-    }
-
-    li:hover{
-        background-color: blue;
-        color:white;
-       
-    }
-   
-}
 
 .hero{
 display: flex;
 justify-content: center;
 background-repeat: no-repeat;
-height: 600px;
+// height: 600px;
+min-height: 75vh;
 background-image:url("images/Health.jpg");
 background-size: cover;
-
 }
 
 .top{
@@ -161,23 +115,23 @@ background-size: cover;
 }
 nav{
     ul{
-      
         li{
     list-style-type: none;
     padding: 10px;
+    text-decoration: none;
         }
     }
 }
 
-.prod-categories{
-    list-style-type: none;
+.home-btn{
+    color: black;
+    letter-spacing: 1px;
+    &:hover{
+   color:blue;
+   cursor: pointer;
+    }
+  
 }
-.hamburger-menu{
-color: white;
-padding: 5px;
-
-}
-
 
 .summer{
     text-align: center;
@@ -186,7 +140,7 @@ padding: 5px;
 }
 .shop{
 padding: 30px;
-background-color: rgb(240, 250, 254);
+background-color: white;
 margin-top: 2rem;
 }
 
@@ -228,19 +182,36 @@ margin-top: 2rem;
 }
 .seeDetails{
     width: 120px;
-    height: 30px;
+    height: 35px;
     background: rgb(212, 212, 240);
     display: flex;
     justify-content: center;
-    margin-top: 10px;
-    margin-left: 50px;
+    margin-top: 20px;
+    margin-left: 40px;
     padding: 5px;
     border: 1px solid rgb(190, 184, 184);
     cursor: pointer;
     a{
     text-decoration: none;
     }
+    &:hover{
+        background-color: rgb(231, 231, 247);
+    }
 }
+.add-cart {
+    position: absolute;
+    right: 0;
+    margin-top: 19px;
+    cursor: pointer;
+    padding: 15px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+&:hover{
+    background-color:  rgb(147, 241, 147); 
+}
+}
+
 
 footer{
     height: 200px;
@@ -268,11 +239,14 @@ footer{
         }
     }
 .social-media{
-    display: inline-flex;
+    display: flex;
+    justify-content: space-around;
     padding: 10px;
+    
     li{
         font-size: 20px;
         cursor: pointer;
+        margin-right: 25px;
     }
 }
     }
@@ -285,20 +259,6 @@ footer{
         
       }
 
-}
-.backBtn{
-    padding: 5px;
-    margin: 10px;
-    margin-top: 55px;
-    margin-left: 100px;
-    width: 100px;
-    height: 35px;
-    background: rgb(212, 212, 240);
-    border-radius: 10%;
-    border: 1px solid rgb(97, 97, 134);
-    cursor: pointer;
-    color: black;
-    font-size: 20px;
 }
 
 

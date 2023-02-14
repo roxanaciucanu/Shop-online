@@ -1,18 +1,27 @@
 .prodPage {
-  padding: 80px;
+  padding: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .product {
   border: 1px solid #f0e2e2;
   height: 500px;
   width: 700px;
-  padding: 25px;
+  padding: 40px;
+}
+
+.prodBox {
+  margin-right: 60px;
+  margin-top: 50px;
+}
+
+.prodInfo {
+  margin-top: 5px;
 }
 
 .delivery {
@@ -23,8 +32,13 @@
   padding: 5px;
 }
 
+.prodPrice {
+  font-size: 30px;
+  color: red;
+}
+
 .prodInfo, .prodPrice, .prodDetails {
-  padding: 10px;
+  padding: 8px;
 }
 
 .delOption {
@@ -32,16 +46,68 @@
 }
 
 .addToCart {
-  background-color: #51b651;
-  text-align: center;
-  margin-top: 10px;
-  width: 250px;
-  height: 70px;
-  padding: 10px;
+  background-color: #d4d4f0;
+  margin-top: 20px;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  width: 200px;
+  height: 40px;
   border: 1px solid #f0e2e2;
+  cursor: pointer;
 }
 
-.addToCart .cart-symbol {
+.addToCart:hover {
+  -webkit-box-shadow: 0 4px 5px 0 black;
+          box-shadow: 0 4px 5px 0 black;
+}
+
+.addCart-text {
+  margin-right: 7px;
+}
+
+.cart-quantity {
+  border: 1px solid black;
+  outline-color: black;
+  width: 2.5rem;
+  text-align: center;
+  font-size: 1rem;
+  padding-left: 1.5px;
+}
+
+.cart-symbol {
   padding: 10px;
+  font-size: 20px;
+  color: black;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.backBtn {
+  padding: 5px;
+  margin: 5px;
+  margin-left: 5px;
+  width: 140px;
+  height: 35px;
+  background: #e1e1f1;
+  border: 1px solid #e9e9f7;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  color: black;
+  font-size: 20px;
+}
+
+.fa-regular {
+  color: gold;
+  font-size: 17px;
+}
+
+.review {
+  font-size: 18px;
 }
 /*# sourceMappingURL=productPage.css.map */

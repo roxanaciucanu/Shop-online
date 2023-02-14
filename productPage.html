@@ -1,4 +1,4 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -17,148 +17,140 @@
 </head>
 
 <body>
-    <header>
-        <div class="logo">
-            <a href="">
-                <img src="/images/logo.jpg" alt="logo" width="250px" height="120px">
-            </a>
-        </div>
-        <div class="wrapper">
-            <div class="find">
-                <input type="search" id="search" placeholder="What would you like to search for today?">
-                <button class="search">Search</button>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <a href="">
+                    <img src="/images/logo.jpg" alt="logo" width="250px" height="120px">
+                </a>
+            </div>
 
-                <div class="auto-fill">
-                    <ul id="filled">
-                        <li><a href="productsCat1.html"> Advil </a> </li>
-                        <li>Elmex</li>
-                        <li>Vichy</li>
-                        <li>Omega</li>
-                        <li>bronz</li>
-                        <li>Herbagen</li>
-                        <li>Fervex</li>
-                        <li>Colebil</li>
-                        <li>Faringosept</li>
-                        <li>Coldrex</li>
-                        <li>Claritine</li>
-                        <li>Calmax</li>
-                        <li>Aloe vera</li>
-                        <li>crema depilatoare</li>
-                        <li>Veet</li>
-                        <li>Borotalco</li>
-                        <li>Elmex</li>
-                        <li>spf</li>
-                        <li>glow</li>
+            <div class="wrapper">
+                <div class="find">
+                   
+                    <input type="search" id="search-text" placeholder="Search..."> <i class="fa-solid fa-magnifying-glass" id="input-icon"></i></input>
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass" id="search-icon"></i></button>
+
+                    <div class="auto-fill">
+                        <ul id="filled">
+                            <li><a href="productsCat1.html"> Advil </a> </li>
+                            <li>Elmex</li>
+                            <li>Vichy</li>
+                            <li>Omega</li>
+                            <li>bronz</li>
+                            <li>Herbagen</li>
+                            <li>Fervex</li>
+                            <li>Colebil</li>
+                            <li>Faringosept</li>
+                            <li>Coldrex</li>
+                            <li>Claritine</li>
+                            <li>Calmax</li>
+                            <li>Aloe vera</li>
+                            <li>crema depilatoare</li>
+                            <li>Veet</li>
+                            <li>Borotalco</li>
+                            <li>Elmex</li>
+                            <li>spf</li>
+                            <li>glow</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <nav>
+                <ul class="customerContact">
+                      <li class="home-btn"><a href="index.html">Home</a>
+                            </li>
+                    <li id="register-btn"><a href="register.html">
+                            Register</a></li>
+                    <li id="login-btn"><a href="login.html">
+                            Login</a></li>
+                    <i class="fa-solid fa-bag-shopping" id="cart-icon"></i>
+                    <li class="cart">
+
+                        <h3 class="cart-title">Your cart</h3>
+                        <div class="cart-content">
+
+                        </div>
+
+                        <div class="total">
+                            <div class="total-tittle">Total</div>
+                            <div class="total-price">$0</div>
+                        </div>
+                        <button type="button" class="btn-buy"> Buy now</button>
+                        <i class="fa-solid fa-xmark" id="close-cart"></i>
+
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="menu">
+            <div class="prod-categories">
+
+                <a href="productsCat1.html" class="link">Medication OTC
+                    <i class="fas fa-caret-right"></i> </a>
+                <div class="dropdown-menuActive">
+                    <ul class="active">
+                        <li><a href="productsCat1.html">Cardiology</a></li>
+                        <li><a href="productsCat1.html">Reumathology</a></li>
+                        <li><a href="productsCat1.html">Urology</a></li>
+                        <li><a href="productsCat1.html">ORL</a></li>
+                        <li><a href="productsCat1.html">Alergies</a></li>
+                    </ul>
+                </div>
+
+
+                <a href="productsCat2.html" class="link">Personal care
+                    <i class="fas fa-caret-right"></i> </a>
+                <div class="dropdown-menuActive">
+                    <ul>
+                        <li><a href="productsCat2.html">Sanitizer</a></li>
+                        <li><a href="productsCat2.html">Child care</a></li>
+                        <li><a href="productsCat2.html">Men care</a></li>
+                        <li><a href="productsCat2.html">Women care</a></li>
+                        <li><a href="productsCat2.html">Hair care</a></li>
+                    </ul>
+                </div>
+
+
+                <a href="productsCat3.html" class="link">Vitamins and suplements
+                    <i class="fas fa-caret-right"></i> </a>
+                <div class="dropdown-menuActive">
+                    <ul>
+                        <li><a href="productsCat3.html">Nervous system</a></li>
+                        <li><a href="productsCat3.html">Endocrine system</a></li>
+                        <li><a href="productsCat3.html">Respiratory system</a></li>
+                        <li><a href="productsCat3.html">Immunity</a></li>
+                        <li><a href="productsCat3.html">Circulation</a></li>
+                    </ul>
+                </div>
+
+                <a href="productsCat4.html" class="link">Diet and wellness
+                    <i class="fas fa-caret-right"></i>
+                </a>
+                <div class="dropdown-menuActive">
+                    <ul>
+                        <li><a href="productsCat4.html">Tea</a></li>
+                        <li><a href="productsCat4.html">Natural juice and syrup</a></li>
+                        <li><a href="productsCat4.html">Vegetal drinks</a></li>
+                        <li><a href="productsCat4.html">Seeds and dried fruits</a></li>
+                        <li><a href="productsCat4.html">Aromatherapy</a></li>
                     </ul>
                 </div>
             </div>
 
         </div>
+   
 
-        <nav>
-            <ul>
-                <li><a href="register.html">
-                        Register</a></li>
-                <li><a href="login.html">
-                        Login</a></li>
-                <i class="fa-solid fa-bag-shopping" id="cart-icon"></i>
-                <li class="cart">
-
-                    <h3 class="cart-title">Your cart</h3>
-                    <div class="cart-content">
-
-                    </div>
-
-                    <div class="total">
-                        <div class="total-tittle">Total</div>
-                        <div class="total-price">$0</div>
-                    </div>
-                    <button type="button" class="btn-buy"> Buy now</button>
-                    <i class="fa-solid fa-xmark" id="close-cart"></i>
-
-                </li>
-            </ul>
-        </nav>
-        </div>
-    </header>
-    <div class="menu">
-        <div>
-            <a href="/">Home</a>
-        </div>
-        <div class="dropdown">
-
-            <button class="prod">
-                <i class="fa-solid fa-bars hamburger-menu"></i>
-                Products</button>
-            <div class="dropdown-menu">
-                <ul class="prod-categories">
-                    <li><a href="productsCat1.html" class="link">Medication OTC
-                            <i class="fas fa-caret-right"></i>
-                        </a>
-                        <div class="dropdown-menu1">
-                            <ul>
-                                <li><a href="productsCat1.html">Cardiology</a></li>
-                                <li><a href="productsCat1.html">Reumathology</a></li>
-                                <li><a href="productsCat1.html">Urology</a></li>
-                                <li><a href="productsCat1.html">ORL</a></li>
-                                <li><a href="productsCat1.html">Alergies</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li><a href="productsCat2.html" class="link">Personal care
-                            <i class="fas fa-caret-right"></i>
-                        </a>
-                        <div class="dropdown-menu3">
-                            <ul>
-                                <li><a href="productsCat2.html">Sanitizer</a></li>
-                                <li><a href="productsCat2.html">Child care</a></li>
-                                <li><a href="productsCat2.html">Men care</a></li>
-                                <li><a href="productsCat2.html">Women care</a></li>
-                                <li><a href="productsCat2.html">Hair care</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="productsCat3.html" class="link">Vitamins and suplements
-                            <i class="fas fa-caret-right"></i>
-                        </a>
-                        <div class="dropdown-menu4">
-                            <ul>
-                                <li><a href="productsCat3.html">Nervous system</a></li>
-                                <li><a href="productsCat3.html">Endocrine system</a></li>
-                                <li><a href="productsCat3.html">Immunity</a></li>
-                                <li><a href="productsCat3.html">Circulation</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><a href="productsCat4.html" class="link">Diet and wellness
-                            <i class="fas fa-caret-right"></i>
-                        </a>
-                        <div class="dropdown-menu5">
-                            <ul>
-                                <li><a href="productsCat4.html">Tea</a></li>
-                                <li><a href="productsCat4.html">Natural juice and syrup</a></li>
-                                <li><a href="productsCat4.html">Vegetal drinks</a></li>
-                                <li><a href="productsCat4.html">Seeds and dried fruits</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-
-            </div>
-
-        </div>
-        <a href="/">Newsletter</a>
-        <a href="/">Careers</a>
-        <a href="/">Loyalty program</a>
-
-    </div>
+             
 
     <div class="prodPage">
         <div class="prodBox">
             <img src="/images/aloe-vera.jpg" alt="" width="380px" height="350px" id="prodImage">
             
-            <h3>Home/Medicaments</h3>
+           
             </div>
             <div class="product">
             <div class="prodInfo">
@@ -179,7 +171,7 @@
             <div class="addToCart">
                 <i class="fa-solid fa-bag-shopping cart-symbol"></i>
                 <h3>ADD TO CART</h3>
-                <h3 class="prodPrice">$ x</h3>
+              
             
           
             </div>
@@ -254,9 +246,9 @@
 </footer>
 
 </body>
-<script src="productPage.js"></script>
 <script src="header.js"></script>
 <script src="shop.js"></script>
 <script src="suggestions.js"></script>
+<script src="index.js"></script>
 
-</html> -->
+</html>
