@@ -63,7 +63,7 @@ const news =
 
     {
         name: "Sindolor",
-        photo: "/meds/sindolor.jpg",
+        photo: "meds/sindolor.jpg",
         price: "$15",
         availability: "in stock",
         description: "text"
@@ -87,7 +87,7 @@ const news =
 
     {
         name: "Canephron",
-        photo: "/meds/voltaren.jpg",
+        photo: "meds/voltaren.jpg",
         price: "$10",
         availability: "in stock",
         description: "text"

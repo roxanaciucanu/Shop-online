@@ -97,7 +97,7 @@ const news =
 
     {
         name: "Otipax",
-        photo: "/meds/otipax.jpg",
+        photo: "meds/otipax.jpg",
         price: "$ 25",
         availability: "in stock",
         description: "text"
