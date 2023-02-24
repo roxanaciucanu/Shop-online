@@ -14,10 +14,7 @@ body{
     height: 140px;
 }
   
-.show-title{
-    text-align: center;
-    margin-top: 50px
-}
+
 .medication{
     @include prodBox;
 }
@@ -29,31 +26,4 @@ body{
     cursor: pointer;
     padding: 20px;
     margin-left: 160px;
-}
-.news-name{
-    padding: 5px;
-    font-size: 15px;
-}
-.detailsBtn{
-    width: 120px;
-    height: 30px;
-    background: rgb(212, 212, 240);
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-bottom: 2px;
-    padding: 5px;
-    border: 1px solid rgb(190, 184, 184);
-    a{
-    text-decoration: none;
-    }
-}
-.addToCart {
-    position: absolute;
-    cursor: pointer;
-    margin-left:10rem;
-    height: 36px;
-    display: flex;
-    align-items: center;
 }

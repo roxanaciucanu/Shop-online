@@ -1,0 +1,320 @@
+@import "basics";
+@import "prodStyle";
+@import "typo";
+
+.hamburgerIcon{
+    display: none;
+    margin-left: 1.5rem;
+}
+
+.hamburgerIcon div{
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 0.25rem;
+
+}
+.customerContact{
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+    li{
+        margin-left: 1rem;
+    }
+}
+
+@media all and(max-width:360px){
+   
+    body{
+        overflow-x: hidden;
+    }
+    .customerContact{
+        display: table;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        height: fit-content;
+        li{
+            font-size: 15px;
+          
+        }
+       
+       .cart-content{
+        width: fit-content;
+        height: fit-content;
+       }
+       .menu #root{
+        position: absolute;
+        z-index: -1;
+       }
+    }
+    .cart{
+        width: 70%;
+        height:fit-content;
+        position: absolute;
+        h3{
+            font-size: 15px;
+        }
+        .total-tittle,.total-price{
+            font-size: 17px;
+        }
+        .btn-buy{
+            font-size: 0.75rem;
+        }
+        .cart-content{
+                width: fit-content;
+                margin-right: 1rem;
+            .cart-prod-title,.cart-price,.cart-remove {
+            font-size: 15px;
+            }     
+     
+        }
+     }
+    .product-box{
+        height: fit-content;
+        width: 170px;
+        padding: 4px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        .seeDetails{
+            width: 100px;
+            height: 25px;
+            font-size: 10px;
+            margin-left: auto;
+            margin-right:auto ;
+    }
+    .prod-img{
+        width: 80px;
+        height: 80px;
+}
+.add-cart{
+    bottom: 0;
+    margin-right: 0;
+    height: 26px;
+    padding: 2px;
+}
+
+}
+    footer{
+        display: none;
+    }
+
+.prodPage{
+        height:80px;
+        width:80px;
+        margin-left: auto;
+        margin-right: auto;
+            
+    .title--prod{
+         font-size: 5px;
+        }
+       
+    }
+
+}
+
+
+@media all and (max-width:768px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    .logo-img{
+        width: 100%;
+        height: 100%;
+       margin-top: 1.5rem;
+    }
+    .hero{
+        min-height: 35vh;
+    }
+    .shop-content{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+    .product-box {
+        margin: 0.5rem;
+      }
+    }
+  
+    .customerContact{
+        display: table;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        height: fit-content;
+        
+    }
+  
+        .prod-categories{
+            right:0px;
+            top:9rem;
+            width: 300px;
+            height: 92vh;
+            position:absolute;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width:60%;
+            transform: translateX(100%);
+            opacity: 0;
+            transition: transform 0.5s ease-in;
+  
+         a{
+            color:rgb(8, 51, 72);
+         }
+            .dropdown-menuActive{
+                top:0px;
+            
+            li:hover{
+                background-color: rgb(206, 206, 241);
+                width: 100%;
+        }
+    }
+}
+.product{
+
+    img{
+        height: 50px;
+        width: 200px;
+    }
+    .prodInfo{
+        height: fit-content;
+        width: fit-content;
+    }
+    .prodDescription{
+        font-size: 15px;
+    } 
+    h3{
+        font-size: 20px;
+    }
+    h2{
+        font-size: 25px;
+    }
+}
+
+
+.hamburgerIcon {
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger-active{
+    transform: translateX(0%);
+    opacity: 1.5;
+    z-index: 1;
+}
+
+    .wrapper{
+        display: none;
+    }
+    footer{
+        width: 100%;
+    }
+    footer div{
+    margin:6px;
+
+        li, h4{
+            font-size: 60%;
+            width: fit-content;
+        }
+        
+    }
+    .link{
+        opacity: 0;
+    }
+
+
+
+}
+
+@media all and (max-width:1024px){
+    body{
+        overflow-x: hidden;
+    
+    }
+    .hero{
+        min-height: 45vh;
+    }
+    .shop-content{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+        margin-right: 25px;
+        margin-left: 15px;
+        .product-box {
+            margin: 0.5rem;
+          }
+    }
+
+   
+    .sign { 
+            width: fit;
+            display: flex;
+            align-items: center;
+          }
+    .register-img img{
+        display: none;
+    }
+  .menu{
+    width:fit-content;
+    .link{
+        font-size: 15px;
+    
+    }
+    .dropdown-menuActive{
+        width: 150px;
+        cursor: pointer;
+    }
+   .dropdown-menuActive ul{
+    width: fit-content;
+    a{
+        font-size: 15px;
+        padding: 5px;
+    }
+   }
+  }
+
+.login{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}    
+.login-form{
+width: 650px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.contact-login{
+    display: flex;
+    flex-direction: column;
+
+}
+.login1{
+    margin-left: -8px;
+}
+.submit{
+   margin-right: 150px;
+}
+.wrapper{
+    display: none;
+}
+
+
+}
+
+@keyframes slideMenu{
+    from{
+        opacity:0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity:1;
+        transform: translateX(0px);
+    }
+}

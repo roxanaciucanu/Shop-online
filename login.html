@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="responsive.css" media="all and (max-width:1024px)">
   </head>
   <body>
     <div class="login">
-      <div>
+      <div class="register-img">
         <img
           src="images/Building.jpg"
           alt="build"
@@ -18,12 +19,13 @@
         />
       </div>
 
-      <div class="formular">
+      <div class="login-form">
         <div class="welcome">
           <h4 style="color: rgb(34, 149, 34)">Nice to see you again!</h4>
           <h2 style="color: rgb(34, 149, 34)">WELCOME BACK</h2>
         </div>
-        <div>
+        
+        <div class="contact-login">
           <div class="login1">
             <label for="emailLogin">Email address</label>
             <input type="text" id="emailLogin" />
@@ -33,10 +35,11 @@
             <input type="password" id="passwordLogin" />
           </div>
 
-          <div class="submit">
-            <button id="abc" onclick="userLogin()">Sign in</button>
-          </div>
         </div>
+        <div class="submit">
+          <button id="abc" onclick="userLogin()">Sign in</button>
+        </div>
+
       </div>
     </div>
     <script src="login.js"></script>

@@ -10,9 +10,9 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width:768px)">
+    <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="productPage.css">
 
 </head>
@@ -23,7 +23,7 @@
             <header>
                 <div class="logo">
                     <a href="">
-                        <img src="images/logo.jpg" alt="logo" width="250px" height="120px">
+                        <img src="images/logo.jpg" alt="logo" width="250px" height="120px" class="logo-img">
                     </a>
                 </div>
 
@@ -61,7 +61,7 @@
                 </div>
 
                 <nav>
-                
+               
                     <ul class="customerContact">
                         <li class="home-btn">Home</li>
                         <li id="register-btn"><a href="register.html">
@@ -84,7 +84,17 @@
                             <i class="fa-solid fa-xmark" id="close-cart"></i>
 
                         </li>
+                        <li>
+                            <div class="hamburgerIcon">
+
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+                                <div class="bar"></div>
+            
+                                </div>
+                        </li>
                     </ul>
+                 
                 </nav>
 
             </header>
@@ -107,7 +117,7 @@
                     <a href="#" class="link">Personal care
                         <i class="fas fa-caret-right"></i> </a>
                     <div class="dropdown-menuActive">
-                        <ul>
+                        <ul class="active">
                             <li><a href="productsCat2.html">Sanitizer</a></li>
                             <li><a href="productsCat2.html">Child care</a></li>
                             <li><a href="productsCat2.html">Men care</a></li>
@@ -120,7 +130,7 @@
                     <a href="#" class="link">Vitamins and suplements
                         <i class="fas fa-caret-right"></i> </a>
                     <div class="dropdown-menuActive">
-                        <ul>
+                        <ul class="active">
                             <li><a href="productsCat3.html">Nervous system</a></li>
                             <li><a href="productsCat3.html">Endocrine system</a></li>
                             <li><a href="productsCat3.html">Respiratory system</a></li>
@@ -133,7 +143,7 @@
                         <i class="fas fa-caret-right"></i>
                     </a>
                     <div class="dropdown-menuActive">
-                        <ul>
+                        <ul class="active">
                             <li><a href="productsCat4.html">Tea</a></li>
                             <li><a href="productsCat4.html">Natural juice and syrup</a></li>
                             <li><a href="productsCat4.html">Vegetal drinks</a></li>
@@ -149,7 +159,7 @@
 
 
             </div>
-            </section>
+          
 
 
             <footer>
@@ -197,7 +207,7 @@
     <script src="header.js"></script>
     <script src="suggestions.js"></script>
     <script src="shop.js"></script>
-    <script src="mobile.js"></script>
+    <script src="responsive.js"></script>
     <script src="productPage.js"></script>
 </body>
 

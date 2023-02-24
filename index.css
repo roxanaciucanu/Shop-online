@@ -50,6 +50,49 @@ div {
   font-size: 20px;
 }
 
+.news-name {
+  padding: 5px;
+  font-size: 15px;
+}
+
+.detailsBtn {
+  width: 120px;
+  height: 30px;
+  background: #d4d4f0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 2px;
+  padding: 5px;
+  border: 1px solid #beb8b8;
+}
+
+.detailsBtn a {
+  text-decoration: none;
+}
+
+.addToCart {
+  cursor: pointer;
+  margin-left: 10rem;
+  height: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.show-title {
+  text-align: center;
+  margin-top: 50px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -102,7 +145,6 @@ body {
   width: fit-content;
   line-height: 1;
   display: inline-block;
-  text-shadow: 0px 4px 12px black;
 }
 
 .dropdown-menuActive {
@@ -377,4 +419,4 @@ footer .copyright p {
   margin-left: 40px;
   color: #b6abab;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=index.css.map */

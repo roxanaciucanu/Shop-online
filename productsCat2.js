@@ -71,13 +71,11 @@ const news =
 
     {
         name: "Bioderma",
-        photo: "meds/bioderma.jpg",
+        photo: "meds/BIODERMA.jpg",
         price: "$ 28",
         availability: "in stock",
         description: "text"
     },
-
- 
 
     {
         name: "Lipogel",
@@ -151,6 +149,7 @@ function newProd(prodData) {
     <div class="medication">
     <img class="med-photo" src="${prodData.photo}">
     <p class="news-name">${prodData.name} <span class="prices"> (${prodData.price}) </span></p>
+    <i class="fa-solid fa-bag-shopping addToCart"></i>
     <button class="detailsBtn"> <a href="productPage.html">See more details</a>
     </button>
     </div>
