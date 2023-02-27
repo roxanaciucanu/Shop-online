@@ -178,7 +178,7 @@ function renderDetails(e) {
   Go back</button>
 <div class="prodPage">
 
-<div class="prodBox">
+<div class="prodPageBox">
 
     <img src=${info[1].src} width="350px" height="340px" id="prodImage">
     </div>
@@ -193,7 +193,7 @@ function renderDetails(e) {
         <i class="fa-regular fa-star"></i>
         <i class="fa-regular fa-star"></i>
         Write a review</span>
-        <h3 class="prodPrice">${info[5].innerHTML}</h3>
+        <h2 class="prodPrice">${info[5].innerHTML}</h2>
     </div>
     <div class="prodDetails">
         <h3>Product details</h3>

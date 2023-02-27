@@ -150,6 +150,11 @@ margin-top: 2rem;
     gap: 3rem;
  
  }
+ .cart{
+    height:60%;
+    position: absolute;
+    overflow-y:scroll;
+}
 
  .product-box{
     position: relative;

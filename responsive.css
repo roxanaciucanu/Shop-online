@@ -119,15 +119,22 @@ div {
   margin-left: 1rem;
 }
 
-@media all and (max-width: 360px) {
+@media screen and (min-width: 200px) and (max-width: 360px) {
   body {
     overflow-x: hidden;
   }
   .customerContact {
-    display: table;
-    margin-right: auto;
-    margin-left: auto;
-    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -206,21 +213,276 @@ div {
     height: 26px;
     padding: 2px;
   }
+  .prod-categories {
+    right: 0px;
+    top: 18rem;
+    width: 150px;
+    text-align: left;
+    height: 82vh;
+    position: absolute;
+    background-color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.5s ease-in;
+    transition: -webkit-transform 0.5s ease-in;
+    transition: transform 0.5s ease-in;
+    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+  }
+  .prod-categories a {
+    color: #083348;
+  }
+  .prod-categories .dropdown-menuActive {
+    top: 0px;
+  }
+  .prod-categories .active {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .prod-categories .active li {
+    font-size: 17px;
+  }
+  .hamburgerIcon {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger-active {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    opacity: 1.5;
+    z-index: 1;
+  }
   footer {
     display: none;
   }
   .prodPage {
-    height: 80px;
-    width: 80px;
+    height: 450px;
+    width: 350px;
+    display: table;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px;
   }
-  .prodPage .title--prod {
-    font-size: 5px;
+  .prodPage .prodBox {
+    margin-right: 10px;
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .prodPage .prodBox img {
+    height: 130px;
+    width: 120px;
+  }
+  .prodPage .product {
+    height: 320px;
+    width: 300px;
+    padding: 15px;
+  }
+  .prodPage .product .prodInfo {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .prodPage .product .prodInfo h2 {
+    font-size: 15px;
+  }
+  .prodPage .product p {
+    font-size: 10px;
+  }
+  .prodPage .product .delOption {
+    font-size: 10px;
+  }
+  .prodPage .product .delivery li {
+    font-size: 10px;
+  }
+  .prodPage .product .addToCart {
+    height: 30px;
+    width: 120px;
+    margin-top: 10%;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .prodPage .product .addToCart h3 {
+    font-size: 8px;
+  }
+  .prodPage .product .addToCart i {
+    height: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .prodPage .fa-regular {
+    color: gold;
+    font-size: 8px;
+  }
+  .prodPage .review {
+    font-size: 10px;
+  }
+  .prodPage .product {
+    width: 360px;
+    height: 400px;
+  }
+  .prodPage .prodInfo {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .prodPage .prodInfo h2 {
+    font-size: 10px;
+  }
+  .prodPage .prodDetails h3 {
+    font-size: 13px;
+  }
+  .prodPage p {
+    font-size: 10px;
+  }
+  .prodPage #prodImage {
+    margin-top: 90px;
+    width: 120px;
+    height: 90px;
+  }
+  .prodPage .backBtn {
+    height: 25px;
+    font-size: 15px;
+  }
+  .login {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .login-form {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .login-form h2, .login-form h4 {
+    font-size: 15px;
+  }
+  .contact-login {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contact-login label {
+    font-size: 13px;
+  }
+  .contact-login .login1, .contact-login .login2 {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .submit {
+    margin-right: 60%;
+  }
+  .submit button {
+    width: 100px;
+    height: 25px;
+    padding-left: 8%;
+  }
+  .sign {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .formular {
+    width: 360px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .formular img {
+    width: 100px;
+  }
+  .formular .form {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin-right: 200px;
+  }
+  .formular .form label {
+    font-size: 12px;
+  }
+  .formular .submit > button {
+    width: 130px;
+    height: 25px;
+    padding-left: 10%;
+  }
+  .register-img img {
+    display: none;
   }
 }
 
-@media all and (max-width: 768px) {
+@media screen and (min-width: 361px) and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }
@@ -239,6 +501,12 @@ div {
   }
   .shop-content .product-box {
     margin: 0.5rem;
+  }
+  .cart {
+    width: 50%;
+    height: 150px;
+    position: absolute;
+    overflow-y: scroll;
   }
   .customerContact {
     display: table;
@@ -294,9 +562,9 @@ div {
     background-color: #cecef1;
     width: 100%;
   }
-  .product img {
-    height: 50px;
-    width: 200px;
+  .prodBox img {
+    height: 150px;
+    width: 330px;
   }
   .product .prodInfo {
     height: -webkit-fit-content;
@@ -306,14 +574,21 @@ div {
     width: -moz-fit-content;
     width: fit-content;
   }
-  .product .prodDescription {
-    font-size: 15px;
-  }
-  .product h3 {
+  .product .prodInfo h2, .product .prodInfo h3 {
     font-size: 20px;
   }
-  .product h2 {
-    font-size: 25px;
+  .product p {
+    font-size: 15px;
+  }
+  .product .delOption {
+    font-size: 15px;
+  }
+  .product .delivery li {
+    font-size: 15px;
+  }
+  .product .addToCart {
+    height: 28px;
+    width: 180px;
   }
   .hamburgerIcon {
     display: block;
@@ -324,6 +599,92 @@ div {
             transform: translateX(0%);
     opacity: 1.5;
     z-index: 1;
+  }
+  .login {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .login-form {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .login-form h2, .login-form h4 {
+    font-size: 20px;
+  }
+  .contact-login {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact-login label {
+    font-size: 17px;
+  }
+  .contact-login .login1, .contact-login .login2 {
+    margin-right: 4rem;
+  }
+  .submit {
+    margin-right: 40%;
+  }
+  .sign {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .formular {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .formular img {
+    width: 120px;
+  }
+  .formular .form {
+    margin: 20px;
+    margin-left: 50px;
+  }
+  .formular .form label {
+    font-size: 17px;
+  }
+  .register-img img {
+    display: none;
   }
   .wrapper {
     display: none;
@@ -345,7 +706,7 @@ div {
   }
 }
 
-@media all and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   body {
     overflow-x: hidden;
   }
@@ -362,6 +723,16 @@ div {
   }
   .shop-content .product-box {
     margin: 0.5rem;
+  }
+  .cart {
+    height: 80%;
+    position: absolute;
+    overflow-y: scroll;
+  }
+  .cart-content {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .sign {
     width: fit;

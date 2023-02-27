@@ -23,16 +23,17 @@
     }
 }
 
-@media all and(max-width:360px){
+@media screen and (min-width:200px) and (max-width:360px){
    
     body{
         overflow-x: hidden;
+        
     }
     .customerContact{
-        display: table;
-        margin-right: auto;
-        margin-left: auto;
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        width: fit-content;
         height: fit-content;
         li{
             font-size: 15px;
@@ -70,6 +71,7 @@
      
         }
      }
+   
     .product-box{
         height: fit-content;
         width: 170px;
@@ -96,30 +98,241 @@
 }
 
 }
+.prod-categories{
+    right:0px;
+    top:18rem;
+    width: 150px;
+    text-align: left;
+    height: 82vh;
+    position:absolute;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:80%;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.5s ease-in;
+
+ a{
+    color:rgb(8, 51, 72);
+ }
+    .dropdown-menuActive{
+        top:0px;
+    }
+    .active{
+        width: fit-content;
+        
+        li{
+            font-size: 17px;
+        }
+    }
+}
+
+.hamburgerIcon {
+    display: block;
+    cursor: pointer;
+  
+}
+
+.hamburger-active{
+    transform: translateX(0%);
+    opacity: 1.5;
+    z-index: 1;
+}
     footer{
         display: none;
     }
 
+//productPage
 .prodPage{
-        height:80px;
-        width:80px;
-        margin-left: auto;
-        margin-right: auto;
-            
-    .title--prod{
-         font-size: 5px;
+    height: 450px;
+    width:350px;
+    display: table;
+    margin-left: auto;
+    margin-right:auto;
+    padding: 10px;
+   
+    .prodBox{
+        margin-right: 10px;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        img{
+            height: 130px;
+            width: 120px; 
+        }
+    }
+    .product{
+        height: 320px;
+        width: 300px;
+        padding: 15px;
+       
+        .prodInfo{
+            height: fit-content;
+            width: fit-content;
+          h2{
+                font-size: 15px;
+            } 
+        }
+        p{
+          font-size: 10px; 
+        }
+        .delOption{
+            font-size: 10px;
+        }
+        .delivery{
+            li{
+                font-size: 10px;
+            }
+        }
+        .addToCart{
+            height: 30px;
+            width: 120px;
+            margin-top:10%;
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            flex-direction: row;
+            h3{
+                font-size: 8px;
+            }
+            i{
+                height: 0.5rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+ 
+}
+
+    .fa-regular{
+            color: gold;
+            font-size: 8px;
+        }
+    .review{
+            font-size: 10px;
         }
        
+    .product{
+        width:360px;
+        height: 400px;
+    }  
+    .prodInfo{
+        height: fit-content;
+        width: fit-content;
+      h2{
+            font-size: 10px;
+        } 
     }
-
+    .prodDetails{
+        h3{
+            font-size: 13px;
+        }
+    }
+    p{
+      font-size: 10px; 
+    }
+    #prodImage{
+        margin-top: 90px;
+        width:120px;
+        height:90px
+}
+.backBtn{
+    height:25px;
+    font-size: 15px;
+}
 }
 
 
-@media all and (max-width:768px) {
+//Login page
+.login{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}    
+.login-form{
+width: fit-content;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+
+h2,h4{
+    font-size: 15px;
+}
+}
+.contact-login{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+label{
+    font-size: 13px;
+}
+.login1,.login2{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}
+}
+.submit{
+    margin-right: 60%;
+    button{
+        width:100px;
+        height: 25px;
+        padding-left: 8%;
+    }
+}
+//Register page
+    .sign { 
+        display: table;
+        margin-right: auto;
+        margin-left: auto;
+      }
+      .formular{
+        width: 360px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+  
+        img{
+           width: 100px;
+        }
+        .form{
+            width: fit-content;
+            height: fit-content;
+            margin-right: 200px;
+            
+            label{
+                font-size: 12px;
+            }
+    
+          }
+          .submit > button{
+            width:130px;
+            height: 25px;
+            padding-left: 10%;
+          }
+      }
+      .register-img img{
+        display: none;
+        }
+        
+}
+
+
+@media screen and (min-width:361px) and (max-width:768px) {
 
     body{
         overflow-x: hidden;
     }
+  
     .logo-img{
         width: 100%;
         height: 100%;
@@ -136,7 +349,12 @@
         margin: 0.5rem;
       }
     }
-  
+    .cart{
+        width: 50%;
+        height:150px;
+        position: absolute;
+        overflow-y:scroll;
+    }
     .customerContact{
         display: table;
         margin-right: auto;
@@ -145,9 +363,9 @@
         flex-direction: row;
         width: fit-content;
         height: fit-content;
-        
-    }
   
+    }
+ 
         .prod-categories{
             right:0px;
             top:9rem;
@@ -175,25 +393,39 @@
         }
     }
 }
+
+//productPage
+.prodBox{
+    img{
+        height: 150px;
+        width: 330px;
+    }
+}
 .product{
 
-    img{
-        height: 50px;
-        width: 200px;
-    }
     .prodInfo{
         height: fit-content;
         width: fit-content;
+       h2, h3{
+            font-size: 20px;
+        } 
     }
-    .prodDescription{
+    p{
+      font-size: 15px; 
+    }
+    .delOption{
         font-size: 15px;
-    } 
-    h3{
-        font-size: 20px;
     }
-    h2{
-        font-size: 25px;
+    .delivery{
+        li{
+            font-size: 15px;
+        }
     }
+    .addToCart{
+        height: 28px;
+        width: 180px;
+    }
+
 }
 
 
@@ -207,7 +439,66 @@
     opacity: 1.5;
     z-index: 1;
 }
+//Login page
+.login{
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+}    
+.login-form{
+width: fit-content;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+h2,h4{
+    font-size: 20px;
+}
+}
 
+.contact-login{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+label{
+    font-size: 17px;
+}
+.login1,.login2{
+    margin-right: 4rem;
+}
+}
+.submit{
+    margin-right: 40%;
+}
+//Register page
+
+.sign { 
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .formular{
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    img{
+       width: 120px;
+    }
+    .form{
+        margin: 20px;
+        margin-left: 50px;
+        label{
+            font-size: 17px;
+        }
+      }
+  }
+
+.register-img img{
+display: none;
+}
     .wrapper{
         display: none;
     }
@@ -231,7 +522,7 @@
 
 }
 
-@media all and (max-width:1024px){
+@media screen and (min-width:769px) and (max-width:1024px){
     body{
         overflow-x: hidden;
     
@@ -249,7 +540,14 @@
           }
     }
 
-   
+    .cart{
+        height:80%;
+        position: absolute;
+        overflow-y:scroll;
+    }
+    .cart-content{
+      width: fit-content;  
+    }
     .sign { 
             width: fit;
             display: flex;

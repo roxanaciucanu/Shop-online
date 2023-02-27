@@ -76,4 +76,10 @@ body {
   padding: 20px;
   margin-left: 160px;
 }
+
+.cart {
+  height: 60%;
+  position: absolute;
+  overflow-y: scroll;
+}
 /*# sourceMappingURL=productsCat1.css.map */

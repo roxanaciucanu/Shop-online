@@ -274,6 +274,12 @@ nav ul li {
   gap: 3rem;
 }
 
+.cart {
+  height: 60%;
+  position: absolute;
+  overflow-y: scroll;
+}
+
 .product-box {
   position: relative;
   border: 1px solid #9f9898;
