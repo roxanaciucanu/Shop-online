@@ -119,7 +119,7 @@ div {
   margin-left: 1rem;
 }
 
-@media screen and (min-width: 200px) and (max-width: 380px) {
+@media screen and (min-width: 200px) and (max-width: 390px) {
   body {
     overflow-x: hidden;
   }
@@ -156,10 +156,9 @@ div {
   }
   .cart {
     width: 70%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 100px;
     position: absolute;
+    overflow-y: scroll;
   }
   .cart h3 {
     font-size: 15px;
@@ -179,12 +178,20 @@ div {
   .cart .cart-content .cart-prod-title, .cart .cart-content .cart-price, .cart .cart-content .cart-remove {
     font-size: 15px;
   }
-  .product-box {
+  .hero {
+    min-height: 25vh;
+  }
+  .shop-content {
+    display: table;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .shop-content .product-box {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
-    width: 170px;
-    padding: 4px;
+    width: 150px;
+    padding: 2px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -195,21 +202,27 @@ div {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin: 1rem;
   }
-  .product-box .seeDetails {
-    width: 100px;
-    height: 25px;
+  .shop-content .product-box .prod-title, .shop-content .product-box .price {
+    font-size: 13px;
+  }
+  .shop-content .seeDetails {
+    width: 80px;
+    height: 30px;
     font-size: 10px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 4px;
   }
-  .product-box .prod-img {
-    width: 80px;
-    height: 80px;
+  .shop-content .prod-img {
+    width: 70px;
+    height: 70px;
+    margin-right: 20%;
   }
-  .product-box .add-cart {
-    bottom: 0;
-    margin-right: 0;
+  .shop-content .add-cart {
+    bottom: 5px;
+    margin-right: 4px;
     height: 26px;
     padding: 2px;
   }
@@ -269,9 +282,11 @@ div {
   }
   .prodPage {
     height: 450px;
-    width: 350px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
     display: table;
-    margin-left: auto;
+    margin-left: 0px;
     margin-right: auto;
     padding: 10px;
   }
@@ -291,8 +306,8 @@ div {
   }
   .prodPage .product {
     height: 320px;
-    width: 300px;
-    padding: 15px;
+    width: 350px;
+    padding: 30px;
   }
   .prodPage .product .prodInfo {
     height: -webkit-fit-content;
@@ -336,18 +351,41 @@ div {
     height: 0.5rem;
     margin-bottom: 1.5rem;
   }
-  .prodPage .fa-regular {
-    color: gold;
-    font-size: 8px;
+  .prodPageBox {
+    height: 550px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .prodPage .review {
-    font-size: 10px;
+  .prodPageBox .prodPageBoxContent {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .prodPage .product {
+  .prodPageBox #prodImage {
+    height: 140px;
+    width: 130px;
+    top: 0px;
+  }
+  .prodPageBox .product {
+    height: 420px;
     width: 360px;
-    height: 400px;
+    padding: 20px;
   }
-  .prodPage .prodInfo {
+  .prodPageBox .product .prodInfo {
     height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
@@ -355,28 +393,55 @@ div {
     width: -moz-fit-content;
     width: fit-content;
   }
-  .prodPage .prodInfo h2 {
-    font-size: 10px;
-  }
-  .prodPage .prodDetails h3 {
-    font-size: 13px;
-  }
-  .prodPage p {
-    font-size: 10px;
-  }
-  .prodPage #prodImage {
-    margin-top: 90px;
-    width: 120px;
-    height: 90px;
-  }
-  .prodPage .backBtn {
-    height: 25px;
+  .prodPageBox .product .prodInfo h2 {
     font-size: 15px;
+  }
+  .prodPageBox .product p {
+    font-size: 10px;
+  }
+  .prodPageBox .product .delOption {
+    font-size: 10px;
+  }
+  .prodPageBox .product .delivery li {
+    font-size: 10px;
+  }
+  .prodPageBox .fa-regular {
+    color: gold;
+    font-size: 8px;
+  }
+  .prodPageBox .review {
+    font-size: 10px;
+  }
+  .prodPageBox .addToCart {
+    height: 30px;
+    width: 120px;
+    margin-top: 10%;
+    display: table;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .prodPageBox .addToCart h3 {
+    font-size: 8px;
+  }
+  .prodPageBox .addToCart i {
+    height: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .prodPageBox .addToCart input[type] {
+    font-size: 12px;
   }
   .login {
     display: table;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 0px;
   }
   .login-form {
     width: -webkit-fit-content;
@@ -428,6 +493,9 @@ div {
     margin-right: auto;
     margin-left: auto;
   }
+  .contact-login .login1 input[type], .contact-login .login2 input[type] {
+    margin-right: 5rem;
+  }
   .submit {
     margin-right: 60%;
   }
@@ -440,6 +508,7 @@ div {
     display: table;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 0px;
   }
   .formular {
     width: 360px;
@@ -472,17 +541,21 @@ div {
   .formular .form label {
     font-size: 12px;
   }
+  .formular .form input[type] {
+    width: 8rem;
+    margin-left: 10%;
+  }
   .formular .submit > button {
     width: 130px;
     height: 25px;
-    padding-left: 10%;
+    padding-left: 40%;
   }
   .register-img img {
     display: none;
   }
 }
 
-@media screen and (min-width: 381px) and (max-width: 768px) {
+@media screen and (min-width: 391px) and (max-width: 768px) {
   body {
     overflow-x: hidden;
   }

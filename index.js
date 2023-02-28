@@ -176,9 +176,9 @@ function renderDetails(e) {
 
   <button class="backBtn" onclick="renderAfterBack()"> <i class="fa-solid fa-backward"></i>
   Go back</button>
-<div class="prodPage">
-
 <div class="prodPageBox">
+
+<div class="prodPageBoxContent">
 
     <img src=${info[1].src} width="350px" height="340px" id="prodImage">
     </div>
@@ -216,6 +216,7 @@ function renderDetails(e) {
        <p class= "addCart-text"> Add to cart</p>
        <input type="number" value="0" class="cart-quantity">
     </div>
+
     </div>
 
 </div>

@@ -8,10 +8,20 @@
           justify-content: center;
 }
 
+.prodPageBox {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .product {
   border: 1px solid #f0e2e2;
   height: 500px;
-  width: 700px;
+  width: 600px;
   padding: 40px;
 }
 
