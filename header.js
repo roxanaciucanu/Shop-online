@@ -33,3 +33,4 @@ function showSuggest(list) {
     }
     suggestBox.innerHTML = listData;
 }
+

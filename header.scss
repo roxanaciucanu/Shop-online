@@ -39,7 +39,7 @@ input{
 }
 input[type=search] {
     position: relative;
-    width: 400px;
+    width: 420px;
     height: 40px;
     border-radius: 2%;
     border: 1px solid rgb(201, 194, 194);
@@ -72,14 +72,21 @@ input:focus + #input-icon{
     border: none;
     background-color:  rgb(212, 212, 240);
     cursor: pointer;
+    margin:0;
+    position: absolute;
 }
+
 
 .find{
     text-align: center;
     position: relative;
+    button{
+        margin-left:0px;
+    }
 }
 #search-icon{
     color:black;
+   
 }
 
 #input-icon{

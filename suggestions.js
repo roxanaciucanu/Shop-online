@@ -1,20 +1,22 @@
 let suggestions = [
-    "Advil",
-    "ACC",
-    "Fervex",
+    "Aspenter",
+    "Otipax",
+    "Aspimax",
     "Colebil",
-    "Faringosept",
-    "Coldrex",
+    "Vitamin C",
+    "Centrum",
     "Claritine",
-    "Calmax",
+    "Sindolor",
     "Vichy",
-    "Omega",
+    "Rival",
     "Aloe vera",
-    "crema depilatoare",
+    "Calcium",
     "Veet",
     "Herbagen",
     "Elmex",
     "Borotalco",
-    "bronz"
+    "La Roche Posay"
 
 ]
+
+

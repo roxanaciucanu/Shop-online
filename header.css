@@ -48,7 +48,7 @@ input {
 
 input[type=search] {
   position: relative;
-  width: 400px;
+  width: 420px;
   height: 40px;
   border-radius: 2%;
   border: 1px solid #c9c2c2;
@@ -81,11 +81,17 @@ input:focus + #input-icon {
   border: none;
   background-color: #d4d4f0;
   cursor: pointer;
+  margin: 0;
+  position: absolute;
 }
 
 .find {
   text-align: center;
   position: relative;
+}
+
+.find button {
+  margin-left: 0px;
 }
 
 #search-icon {

@@ -172,6 +172,7 @@ function updateTotal() {
 
 function renderDetails(e) {
   const info = e.target.parentNode.childNodes;
+  
   const detailsView = `
 
   <button class="backBtn" onclick="renderAfterBack()"> <i class="fa-solid fa-backward"></i>
@@ -223,6 +224,7 @@ function renderDetails(e) {
 
 `;
 
+
   rootElem.innerHTML = detailsView;
  
   
@@ -246,7 +248,7 @@ function renderDetails(e) {
 
 
   // function testing(e) {
-  //   console.log(e.target.parentNode.childNodes[9])
+  //   console.log(e.target.parentNode.childNodes[3])
   // }
 
 
