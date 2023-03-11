@@ -168,6 +168,24 @@ function updateTotal() {
   }
 }
 
+
+let buyMeNow = document.getElementsByClassName("btn-buy")[0]
+
+buyMeNow.addEventListener("click", buyTheItems)
+
+function buyTheItems(){
+    let cartContent = document.getElementsByClassName("cart-content")[0]
+   if (cartContent.hasChildNodes()){
+    cartContent.removeChild(cartContent.firstChild)
+    alert("Thank you for your order! You will receive shortly an email with payment details.")
+   } else if (cartContent.childNodes.length < 1){
+     alert("Please select a product to buy")
+   }
+   updateTotal()
+
+   console.log(cartContent)
+}
+
 //Product-page
 
 function renderDetails(e) {
@@ -258,7 +276,7 @@ const detailsButtonn = document.getElementsByClassName("detailsBtn");
 
 for (let index = 0; index < btnSeeDetails.length; index++) {
   btnSeeDetails[index].addEventListener("click", renderDetails);
-}
+} 
 
 
 //I had to create another function to render the 'rendershop' in order to be able to add the addEventListeners again

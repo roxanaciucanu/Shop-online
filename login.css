@@ -79,4 +79,14 @@
   text-align: center;
   padding-left: 50px;
 }
+
+input:required:hover {
+  opacity: 1;
+}
+
+#required label:after {
+  content: "*";
+  color: red;
+  margin: 1px;
+}
 /*# sourceMappingURL=login.css.map */

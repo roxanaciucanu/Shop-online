@@ -30,31 +30,6 @@
                       Register</a></li>
               <li id="login-btn"><a href="login.html">
                       Login</a></li>
-              <i class="fa-solid fa-bag-shopping" id="cart-icon">your cart</i>
-              <li class="cart">
-
-                  <h3 class="cart-title">Your cart</h3>
-                  <div class="cart-content">
-
-                  </div>
-
-                  <div class="total">
-                      <div class="total-tittle">Total</div>
-                      <div class="total-price">$0</div>
-                  </div>
-                  <button type="button" class="btn-buy"> Buy now</button>
-                  <i class="fa-solid fa-xmark" id="close-cart"></i>
-
-              </li>
-              <li>
-                  <div class="hamburgerIcon">
-
-                      <div class="bar"></div>
-                      <div class="bar"></div>
-                      <div class="bar"></div>
-  
-                      </div>
-              </li>
           </ul>
        
       </nav>
@@ -75,29 +50,29 @@
         <div class="sign-up">
           <img src="images/sign-up.jpg" alt="sign-up" width="200px" />
         </div>
-        <div class="form">
-          <div class="div1">
+        <form>
+          <div class="div1" id="required">
             <label for="name">First Name</label>
-            <input type="text" id="name" />
+            <input type="text" id="name" required/>
           </div>
-          <div class="div2">
+          <div class="div2" id="required">
             <label for="last_name">Last Name</label>
-            <input type="text" id="last_name" name="bla" />
+            <input type="text" id="last_name" required/>
           </div>
-          <div class="div3">
+          <div class="div3" id="required">
             <label for="password">Password</label>
-            <input type="password" id="password" />
+            <input type="password" id="password" required/>
             <div id="error"></div>
           </div>
-          <div class="div4">
+          <div class="div4" id="required">
             <label for="email">Email address</label>
-            <input type="text" id="email" />
+            <input type="text" id="email" required/>
           </div>
 
           <div class="submit">
             <button id="abc" onclick="userSignup();">Sign up</button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
 
