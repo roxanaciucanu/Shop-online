@@ -4,11 +4,10 @@ const pass = document.getElementById("password");
 const lastName = document.getElementById("last_name");
 
 const userSignup = () => {
-  if (localStorage.getItem(email.value)) {
-    //Validating if the entered email is found on the local storage. If it's found, it means that the user already exists hence no possible to register with the given email. 
+  if (email.value == "" ){
+    alert ("Fields must be filled out!")
+  } else if (localStorage.getItem(email.value)) {
     alert("User already exists!"); 
-  } else if (localStorage.getItem(email.value).length === 0 ){
-    alert ("Please fill out the form")
   } else {
     localStorage.setItem(
       email.value,
