@@ -175,15 +175,18 @@ buyMeNow.addEventListener("click", buyTheItems)
 
 function buyTheItems(){
     let cartContent = document.getElementsByClassName("cart-content")[0]
-   if (cartContent.hasChildNodes()){
-    cartContent.removeChild(cartContent.firstChild)
+    let newProd = cartContent.getElementsByClassName("cart-box")[0]
+
+   if (newProd){
     alert("Thank you for your order! You will receive shortly an email with payment details.")
-   } else if (cartContent.childNodes.length < 1){
+    location.href = "/index.html"
+  
+   } else {
      alert("Please select a product to buy")
+     
    }
    updateTotal()
-
-   console.log(cartContent)
+  
 }
 
 //Product-page
